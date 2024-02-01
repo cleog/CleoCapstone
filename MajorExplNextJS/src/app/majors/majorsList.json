@@ -1,0 +1,123 @@
+[
+
+    {
+      "name": "Architectural Engineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.S and H.B.S",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-06/2023-2024_are_bubble_sheet.pdf"
+    },
+    {
+      "name": "Bioengineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.A. B.S. H.B.A. H.B.S.",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/bioengineering_23-24.pdf"
+    },
+    {
+      "name": "Chemical Enginering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.A, B.S, H.B.A, H.B.S",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/chemical_engineering_23-24.pdf"
+    },
+    {
+      "name": "Civil Engineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.A, B.S, H.B.A, H.B.S",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_ce_bubble_sheet.pdf"
+    },
+    {
+      "name": "Computer Science",
+      "campus": "Offered at the Corvallis Campus, OSU-Casacades Campus, and Ecampus",
+      "degreesOffered":"B.A. B.S. H.B.A. H.B.S.",
+      "mathRequirements":"Differential Calculus, Integral Calculus, Elements of Discrete Mathematics",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_cs_-_applied_-_corvallis_campus.pdf"
+    },
+    {
+      "name": "Construction Engineering Management",
+      "campus": "Offered at the Corvallis Campus and Ecampus",
+      "degreesOffered": "B.A, B.S, H.B.A, H.B.S",
+      "mathRequirements": "Differential Calculus, Integral Calculus",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_cem_bubble_sheet.pdf"
+    },
+    {
+      "name": "Ecological Engineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": " B.S, H.B.S",
+      "mathRequirements": "Differential Calculus, Integral Calculus",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/ecological_engineering_bubble_chart_2023-2024.pdf"
+    },
+    {
+      "name": "Electrical and Computer Engineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.S, H.B.S",
+      "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I, Vector Calculus II, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-06/2023-2024_ece_.pdf"
+    },
+    {
+      "name": "Energy Systems Engineering",
+      "campus": "Offered at the OSU-Cascades Campus",
+      "degreesOffered": "B.S, H.B.S",
+      "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2022-12/ese_21_22_4yr_sample_plan_0.pdf"
+    },
+    {
+      "name": "Engineering Science",
+      "campus": "Offered at the OSU-Cascades Campus",
+      "degreesOffered": "B.S, H.B.S",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
+      "samplePlan": "https://catalog.oregonstate.edu/college-departments/engineering/other-degrees-programs/engineering-science-bs-hbs/#sampleplantext"
+    },
+    {
+      "name": "Environmental Engineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.A.. B.S., H.B.A.,H.B.S.",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/environmental_engineering_23-24.pdf"
+    },
+    {
+      "name": "Industrial Engineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.S., H.B.S",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/industrial_engineering_23-24.pdf"
+    },
+    {
+      "name": "Manufacturing Engineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.S, H.B.S",
+      "mathRequirements": ""
+    },
+    {
+      "name": "Mechanical Engineering",
+      "campus": "Offered on the Corvallis Campus and Ecampus",
+      "degreesOffered": "B.S, H.B.S",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/mechanical_engineering_science_23-24.pdf"
+    },
+    {
+      "name": "Nuclear Engineering",
+      "campus": "Offered at the Corvallis Campus",
+      "degreesOffered": "B.S. and H.B.S.",
+      "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_ne.pdf"
+
+    },
+    {
+      "name": "Outdoor Products",
+      "campus": "Offered at the OSU-Cascades Campus",
+      "degreesOffered": "B.S, H.B.S",
+      "mathRequirements": "None",
+      "samplePlan": "https://osucascades.edu/sites/osucascades.edu/files/Advising/op_4year_plan.pdf"
+    },
+    {
+      "name": "Radiation Health Physics",
+      "campus": "Offered at the Corvallis Campus and Ecampus",
+      "degreesOffered": "B.S, H.B.S",
+      "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I",
+      "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_rhp.pdf"
+    }
+    
+  ]
