@@ -1,0 +1,31 @@
+
+[
+    {
+      "question": "What subject do you prefer most?",
+      "answerOptions": [
+        { "answer": "Biology" },
+        { "answer": "Chemistry" },
+        { "answer": "Physics" },
+        { "answer": "Art"},
+        { "answer": "Computer Science" }
+      ]
+    },
+    {
+      "question": "How confident are you with Math?",
+      "answerOptions": [
+        { "answer": "Very confident" },
+        { "answer": "Moderately confident" },
+        { "answer": "Not very confident but determined to continue" },
+        { "answer": "Not confident and I want to take as few math classes as possible" }
+      ]
+    },
+    {
+      "question": "Which work environment would you prefer?",
+      "answerOptions": [
+        { "answer": "Desk job with work from home/hybrid possibilties" },
+        { "answer": "Hands on work" },
+        { "answer": "Outdoors work" },
+        { "answer": "Not sure" }
+      ]
+    }
+  ]
