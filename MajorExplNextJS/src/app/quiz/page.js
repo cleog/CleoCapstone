@@ -8,6 +8,8 @@ export default function Home() {
   // Array of objects with answer by user
   const [selectedOptions, setSelectedOptions] = useState([]);
 
+  // Citation: got the logic for lines 13-18 from Avneesh Agarwal in this tutorial to retain state: https://javascript.plainenglish.io/build-a-quiz-app-with-next-js-and-tailwindcss-f61b14148661 
+
   const handleAnswerOption = (answer) => {
     setSelectedOptions([
       (selectedOptions[currentQuestion] = { answerByUser: answer }),
