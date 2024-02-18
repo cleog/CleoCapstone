@@ -14,27 +14,27 @@ const Navbar = () => {
     {
       id: 1,
       link: "/",
-      label: "home",
+      label: "Home",
     },
     {
       id: 2,
-      link: "about",
-      label: "about",
-    },
-    {
-      id: 3,
       link: "majors",
       label: "Majors",
     },
     {
-      id: 4,
+      id: 3,
       link: "quiz",
       label: "Quiz",
     },
+    {
+      id: 4,
+      link: "compare",
+      label: "Compare",
+    }
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-orange fixed nav">
+    <div className="flex justify-between items-center w-full h-20 pl-6 text-white bg-orange fixed nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-5xl font-signature ml-2">
@@ -44,20 +44,20 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={osuLogo} alt="OSU Logo" width={180} height={180} />
+            <Image src={osuLogo} alt="OSU Logo" width={160} height={160} />
           </a>
         </h1>
       </div>
 
     <div>
-      <h1 className="text-black text-xl items-center">CoE Majors Exploration Tool</h1>
+      <h1 className="text-white text-3xl items-center font-mono ">College of Engineering Majors Exploration Tool</h1>
     </div>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex font-mono">
         {links.map(({ id, link, label }) => (
           <li
             key={id}
-            className="nav-links px-5 cursor-pointer capitalize text-xl text-black hover:scale-105 hover:text-white duration-200 link-underline"
+            className="nav-links px-5 cursor-pointer capitalize text-xl text-white hover:scale-105 hover:text-black duration-200 link-underline font-mono"
           >
             <Link href={link}>{label}</Link>
           </li>

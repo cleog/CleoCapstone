@@ -35,12 +35,12 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col p-24">
+    <main className="flex min-h-screen flex-col p-24 font-mono bg-orange/10">
       <div>
-        <h1 className="mb-3 text-2xl text-center mt-10 font-semibold">Major Exploration Quiz</h1>
+        <h1 className="mb-3 text-2xl text-center mt-10">Major Exploration Quiz</h1>
         <h2 className="mb-3 text-xl text-center mt-10">This quiz will recommend 3 College of Engineering majors that you may be a good fit for!</h2>
-        <div className="flex flex-col mt-20 items-start w-full outline p-4 outline-orange/50 bg-slate-100/40">
-          <h4 className="mt-10 text-xl text-black/60">Question {currentQuestion + 1} of {questions.length}</h4>
+        <div className="flex flex-col mt-20 items-start w-full outline p-4 outline-orange/50 bg-orange/10">
+          <h4 className="mt-10 text-xl text-black">Question {currentQuestion + 1} of {questions.length}</h4>
           <div className="mt-4 text-2xl text-black">
             {questions[currentQuestion].question}
           </div>

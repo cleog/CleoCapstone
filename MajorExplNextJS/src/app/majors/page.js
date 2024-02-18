@@ -20,7 +20,7 @@ export default function Home() {
   const selectedMajorInfo = majorsList.find(m => m.name == selectedMajorName)
 
   return (
-    <main className="flex min-h-screen flex-col p-24">
+    <main className="flex min-h-screen flex-col p-24 font-mono bg-orange/10">
 
       <div className='flex flex-col items-center p-8' >
         <div>
@@ -37,39 +37,40 @@ export default function Home() {
 
         {/* Left Top Column */}
         <div className="lg:col-start-1 lg:col-span-1 lg:row-start-1 lg:text-xl leading-8 text-gray-700 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/10">
-          <div className='font-bold'>Description:</div>
+          <div className='font-bold'>Major Description:</div>
+          < br />
           {selectedMajorInfo.description}
         </div>
 
         {/* Left bottom column */}
         <div className="lg:col-start-1 lg:col-span-1 lg:row-start-2 text-xl mt-8 leading-8 text-gray-700 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/10">
-          <div className='font-bold'>Clubs and Organizations:</div>
+          <div className='font-bold mt-4'>Clubs and Organizations:</div>
           {selectedMajorInfo.clubs}
-          {/* TODO: make this a list */}
 
-          <div className='font-bold mt-8'>Compatible Skills:</div>
-          {selectedMajorInfo.skillMatch}
+          <div className='font-bold mt-4'>Minor Matches:</div>
+          {selectedMajorInfo.minorMatch}
 
-          <div className='font-bold mt-8'>Undergraduate Enrollment Statistics (as of Fall 2022):</div>
+          <div className='font-bold mt-4'>Undergraduate Enrollment Statistics (as of Fall 2022):</div>
           {selectedMajorInfo.enrollment}
         </div>
 
         {/* Right Top Column */}
         <div className="lg:col-start-2 lg:col-span-1 lg:row-start-1 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/10 to-orange/30">
 
-          {/* Campus */}
-          <div className='text-xl leading-8 text-gray-700'>
+          <div className='mt-4 text-xl leading-8 text-gray-700'>
             <div className="font-bold">
-              &nbsp;Campus:</div>
+              Campus:</div>
             {selectedMajorInfo.campus}
           </div>
-
           <div className='mt-4 text-xl leading-8 text-gray-700'>
             <div className="font-bold">
               Degrees Offered:
             </div>
             {selectedMajorInfo.degreesOffered}
-            {/* </div> */}
+          </div>
+          <div className='mt-4 text-xl leading-8 text-gray-700'>
+            <div className='font-bold'>Compatible Skills:</div>
+            {selectedMajorInfo.skillMatch}
           </div>
           <div className='mt-4 text-xl leading-8 text-gray-700'>
             <div className='font-bold'>
@@ -77,13 +78,14 @@ export default function Home() {
             </div>
             {selectedMajorInfo.mathRequirements}
           </div>
-          <div className='mt-6 text-xl leading-8 text-gray-700'>
-            <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href={selectedMajorInfo.samplePlan}>Sample 4-Year Schedule </a>
-          </div>
           <div className='mt-4 text-xl leading-8 text-gray-700'>
             <div className='font-bold'>Hardest Classes: </div>
             {selectedMajorInfo.hardestClasses}
-            {/* TODO: make this a double list */}
+          </div>
+          <div className='mt-4 text-xl leading-8 text-gray-700 flex justify-evenly'>
+            <button className="bg-orange text-white"><a className="font-medium text-white hover:underline" href={selectedMajorInfo.samplePlan}>Sample 4-Year Schedule </a></button>
+            <button className="bg-orange text-white"><a className="font-medium text-white hover:underline" href={selectedMajorInfo.extraInfo}>Schedule of Classes</a></button>
+            <button className="bg-orange text-white"><a className="font-medium text-white hover:underline" href={"https://engineering.oregonstate.edu/tools-services/advising/transfer-student-guides"}>Transfer Guides</a></button>
           </div>
         </div>
 
@@ -92,11 +94,10 @@ export default function Home() {
           <div className='text-xl leading-8 text-gray-700'>
             <div className='font-bold'>Careers:</div>
             {selectedMajorInfo.careers}
-          </div>
-          <div className='mt-6 text-xl leading-8 text-gray-700 italic mt-20'>
-            <div className='font-bold'>Citations:</div>
-            {selectedMajorInfo.citation}
-
+            <div className='mt-3.5 text-xl leading-8 text-gray-700 italic mt-20'>
+              <div className='font-bold'>Citations:</div>
+              {selectedMajorInfo.citation}
+            </div>
           </div>
         </div>
       </div>

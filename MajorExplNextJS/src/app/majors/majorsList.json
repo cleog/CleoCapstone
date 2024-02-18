@@ -7,12 +7,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-06/2023-2024_are_bubble_sheet.pdf",
       "description": "Architectural engineering is the application of engineering fundamentals to the design of buildings and building systems.                   In the architectural engineering program, you'll have the chance to learn how to design buildings that are not only visually stunning but also safe, energy-efficient, and supportive of the health and well-being of those who occupy them. You'll gain a deep understanding of electrical, lighting, mechanical, and structural system and learn how building systems interact with each other. With a focus on sustainability and high-performance buildings, you'll be at the forefront of shaping the built environment for a better future. Upon graduation, you'll have highly sought-after skills and the ability to collaborate with architects, urban planners, and civil engineers to bring your visions to life.                   Students in Oregon State’s program — the only one in the Pacific Northwest — can concentrate on chosen architectural engineering sub-disciplines, such as lighting, mechanical systems, and structures. Graduates possess highly marketable skills that enable them to engineer sustainable and high-performance buildings that support the health of people and the planet.",
-      "citation": "Architectural Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/architectural-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Architectural Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "Associated General Contractors of America Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Institute of Transportation Engineers - OSU Student Chapter",
       "careers": "Architectural Engineer, Building Systems Engineer, Construction Engineer, Design Engineer, Energy Engineer, Facilities Engineer, HVAC Engineer, Lighting Designer, Mechanical Engineer, Structural Engineer, Sustainable Design Engineer, Urban Planner",
       "hardestClasses": "Building Systems Design, Construction Engineering, Energy Systems, Environmental Systems, HVAC Systems, Lighting Systems, Structural Systems",
       "enrollment": "126 students",
-      "skillMatch": "Attention to Detail, Creative, Analytical, Problem-solver, Team Player"
+      "skillMatch": "Attention to Detail, Creative, Analytical, Problem-solver, Team Player",
+      "minorMatch": "Sustainability, Leadership, Environmental Sciences",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Bioengineering",
@@ -21,12 +23,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/bioengineering_23-24.pdf",
       "description": "Make a difference to human health by studying bioengineering. In this interdisciplinary field, you'll combine biology and engineering to create new materials, devices, and processes for medical applications and biotech industries. You'll learn from leading experts in the field and have opportunities to discover applications in precision health, medical device development, cancer treatment, and more. With a solid foundation in biology, chemistry, physics, and math, underpinning advanced coursework in bioengineering principles, you'll be prepared for a career at the nexus of living systems and human design. Students in the bioengineering program at Oregon State University gain a solid background in biology, chemistry, physics and math, in addition to core engineering studies and research opportunities. Advanced coursework includes biomedical engineering principles, materials engineering, and product design. All students complete a capstone-design experience that integrates drug and medical device regulation. Our diverse faculty pursue research interests with applications in precision health, medical device development, cancer treatment, immunotherapy, drug discovery, biomaterials, cell/tissue preservation, and epidemiology.",
-      "citation": "Bioengineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/bioengineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Bioengineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "Biomedical Engineering Society Student Chapter, Chemical, Biological, and Environmental Engineering Student Association, Engineers Without Borders OSU Chapter",
       "careers": "Biomedical Engineer, Biotechnology Engineer, Clinical Engineer, Drug Development Engineer, Medical Device Engineer, Pharmaceutical Engineer, Product Development Engineer, Quality Engineer, Regulatory Affairs Specialist, Research Scientist, Tissue Engineer",
       "hardestClasses": "Biomechanics, Biomaterials, Biomedical Instrumentation, Biomedical Imaging, Biomedical Signal Processing, Cell and Tissue Engineering, Drug Delivery, Medical Device Design, Medical Imaging, Medical Product Regulation, Molecular and Cellular Bioengineering, Nanomedicine, Neural Engineering, Orthopedic Biomechanics, Tissue Engineering",
       "enrollment": "181 students",
-      "skillMatch": "Innovative thinking, Detail Oriented, Interdisciplinary Collaboration, Ethical Judgment, Adaptability"
+      "skillMatch": "Innovative thinking, Detail Oriented, Interdisciplinary Collaboration, Ethical Judgment, Adaptability",
+      "minorMatch": "Biology, Botany, Chemistry",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Chemical Enginering",
@@ -35,12 +39,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/chemical_engineering_23-24.pdf",
       "description": "Chemical engineering is the application of engineering principles to the design, analysis, and operation of processes that transform raw materials into useful products. In the chemical engineering program at Oregon State University, you'll learn how to design and operate processes that are safe, sustainable, and economically viable. You'll gain a deep understanding of chemical processes, thermodynamics, transport phenomena, and reaction engineering. You'll also learn how to design and operate chemical reactors, separation processes, and process control systems. With a focus on sustainability and renewable energy, you'll be at the forefront of shaping the future of chemical processes. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including energy, chemicals, pharmaceuticals, and environmental engineering. Students in Oregon State’s program can concentrate on chosen chemical engineering sub-disciplines, such as biotechnology, environmental engineering, and process systems engineering. Graduates possess highly marketable skills that enable them to engineer sustainable and efficient processes that support the health of people and the planet.",
-      "citation": "Chemical Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/chemical-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Chemical Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "Biomedical Engineering Society Student Chapter, Chemical, Biological, & Environmental Engineering Student Club, Engineers Without Borders - Oregon State University Chapter",
       "careers": "Bioprocess Engineer, Chemical Engineer, Environmental Engineer, Food Process Engineer, Materials Engineer, Pharmaceutical Engineer, Process Control Engineer, Process Design Engineer, Process Development Engineer, Process Safety Engineer, Product Development Engineer, Quality Engineer, Research Scientist, Water Treatment Engineer",
       "hardestClasses": "Thermodynamics, Transport Phenomena, Chemical Reaction Engineering, Process Control, Process Design, Process Safety, Process Systems Engineering",
       "enrollment": "304 students",
-      "skillMatch": "Analytical skills, Critical thinking, Safety consciousness, Patience and perseverance, Environmental awareness"
+      "skillMatch": "Analytical skills, Critical thinking, Safety consciousness, Patience and perseverance, Environmental awareness",
+      "minorMatch": "Chemistry, Sustainability, Earth Sciences",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Civil Engineering",
@@ -49,12 +55,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_ce_bubble_sheet.pdf",
       "description": "Civil engineering is the application of engineering principles to the design, analysis, and construction of infrastructure systems. In the civil engineering program at Oregon State University, you'll learn how to design and build structures, transportation systems, and water resources that are safe, sustainable, and economically viable. You'll gain a deep understanding of structural engineering, transportation engineering, and water resources engineering. You'll also learn how to design and build bridges, buildings, highways, and water treatment plants. With a focus on sustainability and resilience, you'll be at the forefront of shaping the future of infrastructure systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including construction, transportation, and environmental engineering. Students in Oregon State’s program can concentrate on chosen civil engineering sub-disciplines, such as environmental engineering, geotechnical engineering, and structural engineering. Graduates possess highly marketable skills that enable them to engineer sustainable and resilient infrastructure systems that support the health of people and the planet.",
-      "citation": "Civil Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/civil-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Civil Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "Associated General Contractors of America Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Geo-Institute Graduate Student Organization, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Bridge Engineer, Construction Engineer, Environmental Engineer, Geotechnical Engineer, Highway Engineer, Hydraulic Engineer, Materials Engineer, Pavement Engineer, Project Engineer, Structural Engineer, Surveyor, Traffic Engineer, Transportation Engineer, Water Resources Engineer",
       "hardestClasses": "Fluid Mechanics, Structural Analysis, Geotechnical Engineering, Transportation Engineering, Hydraulic Engineering, Structural Design",
       "enrollment": "336 students",
-      "skillMatch": "Leadership, Project management, Social awareness, Precision, Resilience"
+      "skillMatch": "Leadership, Project management, Social awareness, Precision, Resilience",
+      "minorMatch": "Business, Leadership, Sustainability",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Computer Science",
@@ -63,12 +71,14 @@
       "mathRequirements":"Differential Calculus, Integral Calculus, Elements of Discrete Mathematics",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_cs_-_applied_-_corvallis_campus.pdf",
       "description": "Computer science is the study of algorithms, data structures, and programming languages. In the computer science program at Oregon State University, you'll learn how to design and analyze algorithms, develop software systems, and understand the theory behind computation. You'll gain a deep understanding of computer systems, software engineering, and artificial intelligence. You'll also learn how to develop and deploy software applications, and how to design and analyze algorithms. With a focus on security and privacy, you'll be at the forefront of shaping the future of computing. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including technology, finance, and healthcare. Students in Oregon State’s program can concentrate on chosen computer science sub-disciplines, such as cybersecurity, data science, and machine learning. Graduates possess highly marketable skills that enable them to engineer secure and reliable software systems that support the health of people and the planet.",
-      "citation": "Computer Science. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/computer-science, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Computer Science. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "App Development Club, Artificial Intelligence Club, Association of Computing Machinery Women's Chapter, Girls' Empowerment, Engineering, and Outreach, Hackathon Club, Security Club, Oregon State University",
       "careers": "Application Developer, Artificial Intelligence Engineer, Cybersecurity Engineer, Data Scientist, Game Developer, Machine Learning Engineer, Mobile Developer, Network Engineer, Software Engineer, Systems Analyst, Web Developer",
       "hardestClasses": "Data Structures, Computer Architecture and Assembly Language, Analysis of Algorithms, Operating Systems I, Introduction to Computer Networks, Parallel Programming, Elements of Discrete Mathematics",
       "enrollment": "4,297 students",
-      "skillMatch": "Logical thinking, Collaboration, Openness to feedback, Passion for technology, Time management"
+      "skillMatch": "Logical thinking, Collaboration, Openness to feedback, Passion for technology, Time management",
+      "minorMatch": "User Experience Research, Leadership, Cybersecurity Management",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Construction Engineering Management",
@@ -77,12 +87,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_cem_bubble_sheet.pdf",
       "description": "Construction engineering management is the application of engineering principles to the planning, design, and construction of infrastructure systems. In the construction engineering management program at Oregon State University, you'll learn how to manage construction projects, develop construction plans, and understand the business of construction. You'll gain a deep understanding of construction management, project controls, and construction law. You'll also learn how to manage construction projects, develop construction plans, and understand the business of construction. With a focus on sustainability and resilience, you'll be at the forefront of shaping the future of infrastructure systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including construction, transportation, and environmental engineering. Students in Oregon State’s program can concentrate on chosen construction engineering management sub-disciplines, such as environmental engineering, geotechnical engineering, and structural engineering. Graduates possess highly marketable skills that enable them to engineer sustainable and resilient infrastructure systems that support the health of people and the planet.",
-      "citation": "Construction Engineering Management. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/construction-engineering-management, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Construction Engineering Management. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "Associated General Contractors of America Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter",
       "careers": "Construction Engineer, Construction Manager, Cost Engineer, Design Engineer, Environmental Engineer, Geotechnical Engineer, Highway Engineer, Materials Engineer, Pavement Engineer, Project Engineer, Structural Engineer, Surveyor, Traffic Engineer, Transportation Engineer, Water Resources Engineer",
       "hardestClasses": "Construction Engineering, Construction Management, Project Controls, Construction Law, Construction Business",
       "enrollment": "249 students",
-      "skillMatch": "Leadership, Organizational Skills, Communication, Problem-solving Skills, Attention to Detail"
+      "skillMatch": "Leadership, Organizational Skills, Communication, Problem-solving Skills, Attention to Detail",
+      "minorMatch": "Business, Leadership, Sustainability",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Ecological Engineering",
@@ -91,12 +103,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/ecological_engineering_bubble_chart_2023-2024.pdf",
       "description": "Ecological engineering is the application of engineering principles to the design, analysis, and operation of ecosystems. In the ecological engineering program at Oregon State University, you'll learn how to design and build ecosystems that are sustainable, resilient, and supportive of the health of people and the planet. You'll gain a deep understanding of ecological processes, ecosystem design, and environmental engineering. You'll also learn how to design and build wetlands, green roofs, and stormwater management systems. With a focus on sustainability and resilience, you'll be at the forefront of shaping the future of ecosystems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including environmental engineering, water resources, and urban planning. Students in Oregon State’s program can concentrate on chosen ecological engineering sub-disciplines, such as environmental engineering, water resources engineering, and urban planning. Graduates possess highly marketable skills that enable them to engineer sustainable and resilient ecosystems that support the health of people and the planet.",
-      "citation": "Ecological Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/ecological-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Ecological Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Ecological Engineer, Environmental Engineer, Environmental Scientist, Green Infrastructure Engineer, Stormwater Engineer, Urban Planner, Water Resources Engineer, Wetland Engineer",
       "hardestClasses": "Ecological Engineering, Ecosystem Design, Environmental Engineering, Water Resources Engineering, Urban Planning",
       "enrollment": "96 students",
-      "skillMatch": "Innovation, Systems Thinking, Environmental Awareness, Collaboration, Adaptability"
+      "skillMatch": "Innovation, Systems Thinking, Environmental Awareness, Collaboration, Adaptability",
+      "minorMatch": "Fisheries and Wildlife Sciences, Natural Resources, Marine Conservation and Management",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Electrical and Computer Engineering",
@@ -105,12 +119,14 @@
       "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I, Vector Calculus II, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-06/2023-2024_ece_.pdf",
       "description": "Electrical and computer engineering is the application of engineering principles to the design, analysis, and operation of electrical and computer systems. In the electrical and computer engineering program at Oregon State University, you'll learn how to design and build electrical and computer systems that are safe, sustainable, and economically viable. You'll gain a deep understanding of electrical systems, computer systems, and embedded systems. You'll also learn how to design and build power systems, communication systems, and control systems. With a focus on sustainability and renewable energy, you'll be at the forefront of shaping the future of electrical and computer systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including energy, communications, and transportation. Students in Oregon State’s program can concentrate on chosen electrical and computer engineering sub-disciplines, such as power systems, communication systems, and control systems. Graduates possess highly marketable skills that enable them to engineer sustainable and efficient electrical and computer systems that support the health of people and the planet.",
-      "citation": "Electrical and Computer Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/electrical-and-computer-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Electrical and Computer Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Computer Engineer, Control Systems Engineer, Digital Systems Engineer, Electrical Engineer, Embedded Systems Engineer, Energy Systems Engineer, Power Systems Engineer, Robotics Engineer, Signal Processing Engineer, Telecommunications Engineer",
       "hardestClasses": "Circuit Theory, Digital Systems, Electromagnetic Fields, Energy Systems, Power Systems, Signal Processing, Control Systems",
       "enrollment": "549 students",
-      "skillMatch": "Analytical Thinking, Technical Proficiency, Creativity, Teamwork, Continuous Learning"
+      "skillMatch": "Analytical Thinking, Technical Proficiency, Creativity, Teamwork, Continuous Learning",
+      "minorMatch": "Business, Leadership, Cybersecurity Management",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Energy Systems Engineering",
@@ -119,12 +135,14 @@
       "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2022-12/ese_21_22_4yr_sample_plan_0.pdf",
       "description": "Energy systems engineering is the application of engineering principles to the design, analysis, and operation of energy systems. In the energy systems engineering program at Oregon State University, you'll learn how to design and build energy systems that are safe, sustainable, and economically viable. You'll gain a deep understanding of energy systems, renewable energy, and energy policy. You'll also learn how to design and build power systems, energy storage systems, and energy management systems. With a focus on sustainability and renewable energy, you'll be at the forefront of shaping the future of energy systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including energy, transportation, and environmental engineering. Students in Oregon State’s program can concentrate on chosen energy systems engineering sub-disciplines, such as power systems, renewable energy, and energy policy. Graduates possess highly marketable skills that enable them to engineer sustainable and efficient energy systems that support the health of people and the planet.",
-      "citation": "Energy Systems Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/energy-systems-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Energy Systems Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Energy Engineer, Environmental Engineer, Power Systems Engineer, Renewable Energy Engineer, Smart Grid Engineer, Solar Energy Engineer, Wind Energy Engineer",
       "hardestClasses": "Energy Systems, Renewable Energy, Energy Policy, Power Systems, Smart Grids",
       "enrollment": "96 students",
-      "skillMatch": "Problem-solving Ability, Systems Thinking, Sustainability Focus, Interdisciplinary Collaboration, Adaptability"
+      "skillMatch": "Problem-solving Ability, Systems Thinking, Sustainability Focus, Interdisciplinary Collaboration, Adaptability",
+      "minorMatch": "Sustainability, Earth Sciences, Environmental Sciences",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Engineering Science",
@@ -133,26 +151,30 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
       "samplePlan": "https://catalog.oregonstate.edu/college-departments/engineering/other-degrees-programs/engineering-science-bs-hbs/#sampleplantext",
       "description": "Engineering science is the application of engineering principles to the design, analysis, and operation of engineering systems. In the engineering science program at Oregon State University, you'll learn how to design and build engineering systems that are safe, sustainable, and economically viable. You'll gain a deep understanding of engineering systems, renewable energy, and engineering policy. You'll also learn how to design and build engineering systems, energy storage systems, and energy management systems. With a focus on sustainability and renewable energy, you'll be at the forefront of shaping the future of engineering systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including energy, transportation, and environmental engineering. Students in Oregon State’s program can concentrate on chosen engineering science sub-disciplines, such as power systems, renewable energy, and engineering policy. Graduates possess highly marketable skills that enable them to engineer sustainable and efficient engineering systems that support the health of people and the planet.",
-      "citation": "Engineering Science. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/engineering-science, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Engineering Science. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Energy Engineer, Environmental Engineer, Power Systems Engineer, Renewable Energy Engineer, Smart Grid Engineer, Solar Energy Engineer, Wind Energy Engineer",
       "hardestClasses": "Statics, Dynamics, Fluid Mechanics, Thermodynamics, Heat Transfer, Materials Science, Engineering Design",
       "enrollment": "7 students",
-      "skillMatch": "Analytical Skills, Critical Thinking, Innovation, Research Aptitude, Interdisciplinary Understanding"
+      "skillMatch": "Analytical Skills, Critical Thinking, Innovation, Research Aptitude, Interdisciplinary Understanding",
+      "minorMatch": "Sustainability, Environmental Sciences, Earth Sciences",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Environmental Engineering",
       "campus": "Offered at the Corvallis Campus",
-      "degreesOffered": "B.A.. B.S., H.B.A.,H.B.S.",
+      "degreesOffered": "B.A., B.S., H.B.A., H.B.S.",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/environmental_engineering_23-24.pdf",
       "description": "Environmental engineering is the application of engineering principles to the design, analysis, and operation of environmental systems. In the environmental engineering program at Oregon State University, you'll learn how to design and build environmental systems that are safe, sustainable, and economically viable. You'll gain a deep understanding of water resources, air quality, and environmental policy. You'll also learn how to design and build water treatment systems, air pollution control systems, and solid waste management systems. With a focus on sustainability and resilience, you'll be at the forefront of shaping the future of environmental systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including environmental engineering, water resources, and urban planning. Students in Oregon State’s program can concentrate on chosen environmental engineering sub-disciplines, such as water resources engineering, air quality engineering, and environmental policy. Graduates possess highly marketable skills that enable them to engineer sustainable and resilient environmental systems that support the health of people and the planet.",
-      "citation": "Environmental Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/environmental-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Environmental Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Air Quality Engineer, Environmental Engineer, Environmental Scientist, Green Infrastructure Engineer, Stormwater Engineer, Urban Planner, Water Resources Engineer, Wetland Engineer",
       "hardestClasses": "Environmental Engineering, Water Resources Engineering, Air Quality Engineering, Environmental Policy",
       "enrollment": "85 students",
-      "skillMatch": "Environmental Awareness, Analytical Skills, Problem-Solving Ability, Communication Skills, Teamwork"
+      "skillMatch": "Environmental Awareness, Analytical Skills, Problem-Solving Ability, Communication Skills, Teamwork",
+      "minorMatch": "Sustainability, Natural Resources, Marine Conservation and Management",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Industrial Engineering",
@@ -161,12 +183,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/industrial_engineering_23-24.pdf",
       "description": "Industrial Engineering is the application of engineering principles to the design, analysis, and operation of systems that produce goods and services. In the industrial engineering program at Oregon State University, you'll learn how to design and build systems that are safe, sustainable, and economically viable. You'll gain a deep understanding of production systems, supply chain systems, and service systems. You'll also learn how to design and build manufacturing systems, logistics systems, and healthcare systems. With a focus on sustainability and resilience, you'll be at the forefront of shaping the future of production systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including manufacturing, logistics, and healthcare. Students in Oregon State’s program can concentrate on chosen industrial engineering sub-disciplines, such as manufacturing systems, logistics systems, and healthcare systems. Graduates possess highly marketable skills that enable them to engineer sustainable and efficient production systems that support the health of people and the planet.",
-      "citation": "Industrial Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/industrial-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Industrial Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Healthcare Systems Engineer, Industrial Engineer, Logistics Engineer, Manufacturing Engineer, Operations Engineer, Process Engineer, Production Engineer, Quality Engineer, Supply Chain Engineer, Systems Engineer",
       "hardestClasses": "Manufacturing Systems, Logistics Systems, Healthcare Systems, Production Systems",
       "enrollment": "126 students",
-      "skillMatch": "Efficiency Focus, Analytical Skills, Problem-Solving Ability, Communication Skills, Adaptability"
+      "skillMatch": "Efficiency Focus, Analytical Skills, Problem-Solving Ability, Communication Skills, Adaptability",
+      "minorMatch": "Supply Chain and Logistics Management, Leadership, Sustainability",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Manufacturing Engineering",
@@ -175,12 +199,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
       "samplePlan": "https://catalog.oregonstate.edu/college-departments/engineering/school-mechanical-industrial-manufacturing-engineering/manufacturing-engineering-bs-hbs/#sampleplantext",
       "description": "Manufacturing engineering is the application of engineering principles to the design, analysis, and operation of manufacturing systems. In the manufacturing engineering program at Oregon State University, you'll learn how to design and build manufacturing systems that are safe, sustainable, and economically viable. You'll gain a deep understanding of manufacturing systems, materials engineering, and production systems. You'll also learn how to design and build machines, heat exchangers, and materials processing systems. With a focus on sustainability and renewable energy, you'll be at the forefront of shaping the future of manufacturing systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including energy, transportation, and manufacturing. Students in Oregon State’s program can concentrate on chosen manufacturing engineering sub-disciplines, such as energy systems, transportation systems, and materials engineering. Graduates possess highly marketable skills that enable them to engineer sustainable and efficient manufacturing systems that support the health of people and the planet.",
-      "citation": "Manufacturing Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/manufacturing-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Manufacturing Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Energy Systems Engineer, Manufacturing Engineer, Materials Engineer, Process Engineer, Production Engineer, Quality Engineer, Systems Engineer, Transportation Engineer",
       "hardestClasses": "Manufacturing Systems, Materials Engineering, Production Systems, Energy Systems",
       "enrollment": "117 students",
-      "skillMatch": "Technical Skills, Problem-Solving Ability, Attention to Detail, Teamwork, Continuous Improvement Mindset"
+      "skillMatch": "Technical Skills, Problem-Solving Ability, Attention to Detail, Teamwork, Continuous Improvement Mindset",
+      "minorMatch": "Supply Chain and Logistics Management, Business, Leadership",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Mechanical Engineering",
@@ -189,12 +215,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/mechanical_engineering_science_23-24.pdf",
       "description": "Mechanical engineering is the application of engineering principles to the design, analysis, and operation of mechanical systems. In the mechanical engineering program at Oregon State University, you'll learn how to design and build mechanical systems that are safe, sustainable, and economically viable. You'll gain a deep understanding of mechanical systems, thermal systems, and materials engineering. You'll also learn how to design and build machines, heat exchangers, and materials processing systems. With a focus on sustainability and renewable energy, you'll be at the forefront of shaping the future of mechanical systems. Upon graduation, you'll have highly sought-after skills and the ability to work in a wide range of industries, including energy, transportation, and manufacturing. Students in Oregon State’s program can concentrate on chosen mechanical engineering sub-disciplines, such as energy systems, transportation systems, and materials engineering. Graduates possess highly marketable skills that enable them to engineer sustainable and efficient mechanical systems that support the health of people and the planet.",
-      "citation": "Mechanical Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/mechanical-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Mechanical Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Energy Systems Engineer, Manufacturing Engineer, Materials Engineer, Process Engineer, Production Engineer, Quality Engineer, Systems Engineer, Transportation Engineer",
       "hardestClasses": "Mechanical Systems, Thermal Systems, Materials Engineering, Energy Systems",
       "enrollment": "194 students", 
-      "skillMatch": "Creativity, Problem-Solving Skills, Attention to Detail, Teamwork, Technical Aptitude"
+      "skillMatch": "Creativity, Problem-Solving Skills, Attention to Detail, Teamwork, Technical Aptitude",
+      "minorMatch": "Innovation and Entrepreneurship, Leadership, Cybersecurity Management",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Nuclear Engineering",
@@ -203,12 +231,14 @@
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_ne.pdf",
       "description": "Nuclear engineering focuses on understanding and using nuclear power to provide carbon-free electricity and to produce and use radiation and radioactive materials. Nuclear engineers research and develop new reactor and radiation shielding designs, advanced computational techniques, nuclear fuel recycling and management strategies, and radioisotope technologies for use in research, medicine, industry, and national security. At Oregon State, students experience nuclear engineering like nowhere else in the world. Our on-site nuclear reactor and large-scale test facilities, renowned faculty, and low student-to-faculty ratio combine to make a unique and rewarding experience at one of the nation’s highest ranked programs.",
-      "citation": "Nuclear Engineering. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/nuclear-engineering, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Nuclear Engineering. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Nuclear Engineer, Nuclear Power Plant Engineer, Radiation Health Physicist, Radioisotope Engineer, Reactor Engineer, Research Scientist",
       "hardestClasses": "Nuclear Reactor Theory, Nuclear Reactor Design, Radiation Shielding, Nuclear Fuel Cycle, Radioisotope Technologies",
       "enrollment": "105 students",
-      "skillMatch": "Analytical Skills, Attention to Detail, Safety Consciousness, Problem-Solving Ability, Technical Proficiency"
+      "skillMatch": "Analytical Skills, Attention to Detail, Safety Consciousness, Problem-Solving Ability, Technical Proficiency",
+      "minorMatch": "Chemistry, Physics, Earth Sciences",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Outdoor Products",
@@ -217,12 +247,14 @@
       "mathRequirements": "None",
       "samplePlan": "https://osucascades.edu/sites/osucascades.edu/files/Advising/op_4year_plan.pdf",
       "description": "The Bachelor of Science in Outdoor Products program at Oregon State University-Cascades is one of only a few of its kind in the country. This creative and interdisciplinary program prepares students for a career in the outdoor industry. Leaders in the industry are constantly looking to hire innovative thinkers who also champion responsible approaches to product commercialization and who understand the need to balance business with respect for the natural world. Students learn the historical context of the outdoor industry, so they can help shape its future. They’ll study design, engineering, natural resources, outdoor recreation, sustainability, and business with expert faculty who have experience in research, industry, and public agencies, and who believe in environmental stewardship and corporate responsibility. Practicums, internships, and capstone projects are integral to the core curriculum and provide students with practical, hands-on experiences that potential employers value. Students majoring in other programs at OSU-Cascades can choose to complete the outdoor products minor.",
-      "citation": "Outdoor Products. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/outdoor-products, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Outdoor Products. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Apparel Designer, Footwear Designer, Gear Designer, Outdoor Product Developer, Outdoor Product Manager, Outdoor Product Marketer, Outdoor Product Sales, Outdoor Product Tester, Outdoor Product Writer, Product Developer, Product Manager, Product Marketer, Product Sales, Product Tester, Product Writer",
       "hardestClasses": "Design, Engineering, Natural Resources, Outdoor Recreation, Sustainability, Business",
       "enrollment": "17 students",
-      "skillMatch": "Innovation, Systems Thinking, Environmental Awareness, Collaboration, Adaptability"
+      "skillMatch": "Innovation, Systems Thinking, Environmental Awareness, Collaboration, Adaptability",
+      "minorMatch": "Sustainability, Environmental Sciences, Earth Sciences",
+      "extraInfo": "https://classes.oregonstate.edu"
     },
     {
       "name": "Radiation Health Physics",
@@ -231,12 +263,14 @@
       "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_rhp.pdf",
       "description": "Radiation health physics involves the study of ionizing radiation and developing systems and methods to protect people and their environments from radiations hazards. Radiation health physicists protect us from the potential dangers of exposure to radiation. Their responsibilities may include managing radiation safety at nuclear plants and hospitals; designing radiation shields for industrial and medical applications; designing sophisticated radiation detection systems; researching the effects of radiation on the environment; and providing radiation protection training. Their role is essential to society’s well-being. Students at Oregon State are guided by our top-notch faculty, who are known worldwide for their research, expertise, and innovative teaching. Our program, which traces its roots back to the 1960s, now graduates more students than any other academic institution in the nation, putting them on track to be leaders in this dynamic, indispensable field.",
-      "citation": "Radiation Health Physics. (2023, July 7). Oregon State University College of Engineering. https://engineering.oregonstate.edu/Academics/Degrees/radiation-health-physics, https://engineering.oregonstate.edu/about/fact-sheet/enrollment-summary-2022#enroll-sum",
+      "citation": "Radiation Health Physics. (2023, July 7). Oregon State University College of Engineering.",
       "clubs": "American Society of Civil Engineers Student Chapter, Earthquake Engineering Research Institute/OSU Student Chapter, Engineers Without Borders - Oregon State University, Institute of Transportation Engineers - OSU Student Chapter, Marine Renewable Energy Club",
       "careers": "Health Physicist, Medical Physicist, Nuclear Engineer, Nuclear Physicist, Radiation Safety Officer, Radiological Engineer, Radiological Health Physicist, Radiological Physicist, Radiological Safety Officer, Radiological Scientist",
       "hardestClasses": "Radiation Safety, Radiation Shielding, Radiation Detection, Radiation Effects, Radiation Protection",
       "enrollment": "15 students",
-      "skillMatch": "Analytical Skills, Attention to Detail, Safety Consciousness, Problem-Solving Ability, Technical Proficiency"
+      "skillMatch": "Analytical Skills, Attention to Detail, Safety Consciousness, Problem-Solving Ability, Technical Proficiency",
+      "minorMatch": "Chemistry, Physics, Earth Sciences",
+      "extraInfo": "https://classes.oregonstate.edu"
     }
     
   ]
