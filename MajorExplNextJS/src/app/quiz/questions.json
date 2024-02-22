@@ -1,31 +1,137 @@
 
 [
-    {
-      "question": "What subject do you prefer most?",
-      "answerOptions": [
-        { "answer": "Biology" },
-        { "answer": "Chemistry" },
-        { "answer": "Physics" },
-        { "answer": "Art"},
-        { "answer": "Computer Science" }
-      ]
-    },
-    {
-      "question": "How confident are you with Math?",
-      "answerOptions": [
-        { "answer": "Very confident" },
-        { "answer": "Moderately confident" },
-        { "answer": "Not very confident but determined to continue" },
-        { "answer": "Not confident and I want to take as few math classes as possible" }
-      ]
-    },
-    {
-      "question": "Which work environment would you prefer?",
-      "answerOptions": [
-        { "answer": "Desk job with work from home/hybrid possibilties" },
-        { "answer": "Hands on work" },
-        { "answer": "Outdoors work" },
-        { "answer": "Not sure" }
-      ]
-    }
-  ]
+  {
+    "question": "What subject do you prefer most?",
+    "answerOptions": [
+      { "answer": "Biology", "matches": ["BE", "EcolE"]},
+      { "answer": "Chemistry", "matches": ["CE", "BE", "NE", "RHP"] },
+      { "answer": "Physics", "matches": ["RHP", "NE", "MeE", "ES", "ESE", "ECE"] },
+      { "answer": "Art/Design", "matches": ["AE", "CS", "OP"]},
+      { "answer": "Computer Science", "matches": ["CS"]},
+      { "answer": "Environmental Science", "matches": ["EcolE", "EnvE", "ES"]}
+    ]
+  },
+  {
+    "question": "How confident are you with Math?",
+    "answerOptions": [
+      { "answer": "Very confident", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP"]},
+      { "answer": "Moderately confident", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP"]},
+      { "answer": "Not very confident but determined to continue", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP"]},
+      { "answer": "Not confident and I want to take as few math classes as possible", "matches": ["OP", "RHP", "ES", "EcolE", "CS", "CivE"]}
+    ]
+  },
+  {
+    "question": "Which work environment would you prefer?",
+    "answerOptions": [
+      { "answer": "Desk job with work from home/hybrid possibilties", "matches": ["CS", "AE"]},
+      { "answer": "Hands on work", "matches": ["CE", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE"]},
+      { "answer": "Outdoors work", "matches": ["CEM", "CivE", "EcolE", "ESE", "EnvE"]},
+      { "answer": "Not sure", "matches": []}
+    ]
+  },
+  {
+    "question": "Which is your strongest skill?",
+    "answerOptions": [
+      { "answer": "Creative/Innovative Thinking", "matches": ["AE", "OP", "MeE", "CS", "EnvE", "EcolE"] },
+      { "answer": "Attention to detail", "matches": ["CS", "RHP", "NE", "AE", "CE", "ECE", "ES", "MeE", "OP", "BE"] },
+      { "answer": "Problem solving", "matches": ["CS", "RHP", "NE", "AE", "CE", "ECE", "ES", "MeE", "OP", "BE"] },
+      { "answer": "Leadership", "matches": ["CS", "RHP", "NE", "AE", "CE", "ECE", "ES", "MeE", "OP", "BE"] },
+      { "answer": "Environmental Awareness", "matches": ["EcolE", "EnvE", "ES"] }
+    ]
+  },
+  {
+    "question": "How strong is your chemistry ability?",
+    "answerOptions": [
+      { "answer": "Very strong", "matches": ["CE", "BE", "NE", "RHP"]},
+      { "answer": "I am moderately confident about my chemistry ability", "matches": ["CE", "BE", "NE", "RHP"]},
+      { "answer": "Not the best but I am determined to continue trying", "matches": ["CE", "BE", "NE", "RHP"]},
+      { "answer": "Not good and I am not interested in this subject", "matches": ["CS", "OP", "CivE", "CEM"]},
+      { "answer": "I would like to avoid taking future chemistry classes", "matches": ["CS", "OP", "CivE", "CEM"]},
+      { "answer": "Not sure", "matches": [] }
+    ]
+  },
+  {
+    "question": "How strong is your biology ability?",
+    "answerOptions": [
+      { "answer": "Very strong", "matches": ["BE", "EcolE", "EnvE"]},
+      { "answer": "I am moderately confident about my biology ability", "matches": ["BE", "EcolE", "EnvE"]},
+      { "answer": "Not the best but I am determined to continue trying", "matches": ["BE", "EcolE", "EnvE"]},
+      { "answer": "Not good and I am not interested in this subject", "matches": ["CS", "OP", "CivE", "CEM"]},
+      { "answer": "I would like to avoid taking future biology classes", "matches": ["CS", "OP", "CivE", "CEM"]},
+      { "answer": "Not sure", "matches": [] }
+    ]
+  },
+  {
+    "question": "How comfortable are you with majors that may involve the need for safety consciousness?",
+    "answerOptions": [
+      { "answer": "I am comfortable following safety protocols and having risks associated with my future career", "matches": ["RHP", "NE", "CivE"] },
+      { "answer": "I would prefer to avoid majors that involve risks to my safety", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "OP", "BE", "EcolE", "EnvE"] },
+      { "answer": "Not sure", "matches": [] }
+    ]
+  } ,
+  {
+    "question": "Do you want to pursue a career in the medical field?",
+    "answerOptions": [
+      { "answer": "Yes!", "matches": ["RHP", "BE"]},
+      { "answer": "Not really", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"]},
+      { "answer": "Not sure", "matches": [] }
+    ]
+  },
+  {
+    "question": "Do you want to work in the aerospace industry?",
+    "answerOptions": [
+      { "answer": "Yes!", "matches": ["AE"]},
+      { "answer": "Not really", "matches": ["CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"]},
+      { "answer": "Not sure", "matches": [] }
+    ]
+  },
+  {
+    "question": "Do you want to work in the automotive industry?",
+    "answerOptions": [
+      { "answer": "Yes!", "matches": ["IE", "ME", "ECE", "CivE", "ESE"]},
+      { "answer": "Not really", "matches": ["AE", "CE", "CS", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CEM"]},
+      { "answer": "Not sure", "matches": [] }
+    ]
+  },
+  {
+    "question": "Do you want to work in the construction industry?",
+    "answerOptions": [
+      { "answer": "Yes!", "matches": ["CE", "CivE"]},
+      { "answer": "Not really", "matches": ["AE", "CS", "ECE", "ES", "IE", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CEM"]},
+      { "answer": "Not sure", "matches": [] }
+    ]
+  },
+  {
+    "question": "Do you want to work in the energy industry?",
+    "answerOptions": [
+      { "answer": "Yes!", "matches": ["CEM", "ESE"]},
+      { "answer": "Not really", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE"]},
+      { "answer": "Not sure", "matches": [] }
+    ]
+  },
+  {
+    "question": "Do you want to work in the environmental industry?",
+    "answerOptions": [
+      { "answer": "Yes!", "matches": ["EcolE", "EnvE", "ME"]},
+      { "answer": "Not really", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "CivE", "CEM"]},
+      { "answer": "Not sure", "matches": [] }
+    ]
+  },
+  {
+    "question": "Do you want to collaborate with others at work?",
+    "answerOptions": [
+      { "answer": "Yes, I love teamwork!", "matches": ["AE", "CE", "IE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"]},
+      { "answer": "I am comfortbale collaborating with others but would like some independent work in the mix too", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"]},
+      { "answer": "I prefer to work alone", "matches": ["AE", "CE", "ECE", "ES", "OP"]},
+      { "answer": "Not sure", "matches": []}
+    ]
+  },
+  {
+  "question": "Are you interested in entrepreneurship?",
+    "answerOptions": [
+      { "answer": "Yes, I would love to gain skills that allow me to start my own business one day!", "matches": ["AE", "CS", "ECE", "MeE", "OP", "BE", "EcolE", "EnvE"]},
+      { "answer": "No, I prefer to work for a company", "matches": ["CE", "CS", "ECE", "ES", "NE", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"]},
+      { "answer": "Not sure", "matches": []}
+    ]
+  }
+]

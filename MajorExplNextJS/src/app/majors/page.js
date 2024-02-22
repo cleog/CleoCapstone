@@ -30,6 +30,7 @@ export default function Home() {
         <select name="majors" id="majorsDropdown" onChange={onOptionChangeHandler} className="w-1/4 inline-flex gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
           {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
         </select>
+        <button className="bg-orange text-white"><a className="font-medium text-white hover:underline" href="/compare">Start Comparison </a></button>
       </div>
 
       {/* Grid with two columns */}

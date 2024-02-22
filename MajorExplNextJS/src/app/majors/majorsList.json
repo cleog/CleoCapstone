@@ -2,6 +2,7 @@
 
     {
       "name": "Architectural Engineering",
+      "shortcode": "AE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.S and H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
@@ -18,6 +19,7 @@
     },
     {
       "name": "Bioengineering",
+      "shortcode": "BE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.A. B.S. H.B.A. H.B.S.",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
@@ -34,6 +36,7 @@
     },
     {
       "name": "Chemical Enginering",
+      "shortcode": "CE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.A, B.S, H.B.A, H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
@@ -50,6 +53,7 @@
     },
     {
       "name": "Civil Engineering",
+      "shortcode": "CivE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.A, B.S, H.B.A, H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
@@ -66,7 +70,8 @@
     },
     {
       "name": "Computer Science",
-      "campus": "Offered at the Corvallis Campus, OSU-Casacades Campus, and Ecampus",
+      "shortcode": "CS",
+      "campus": "Offered at the Corvallis Campus, OSU-Cascades Campus, and Ecampus",
       "degreesOffered":"B.A. B.S. H.B.A. H.B.S.",
       "mathRequirements":"Differential Calculus, Integral Calculus, Elements of Discrete Mathematics",
       "samplePlan": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-10/2023-2024_cs_-_applied_-_corvallis_campus.pdf",
@@ -82,6 +87,7 @@
     },
     {
       "name": "Construction Engineering Management",
+      "shortcode": "CEM",
       "campus": "Offered at the Corvallis Campus and Ecampus",
       "degreesOffered": "B.A, B.S, H.B.A, H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus",
@@ -98,6 +104,7 @@
     },
     {
       "name": "Ecological Engineering",
+      "shortcode": "EcolE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": " B.S, H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus",
@@ -114,6 +121,7 @@
     },
     {
       "name": "Electrical and Computer Engineering",
+      "shortcode": "ECE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.S, H.B.S",
       "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I, Vector Calculus II, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
@@ -130,6 +138,7 @@
     },
     {
       "name": "Energy Systems Engineering",
+      "shortcode": "ESE",
       "campus": "Offered at the OSU-Cascades Campus",
       "degreesOffered": "B.S, H.B.S",
       "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
@@ -146,6 +155,7 @@
     },
     {
       "name": "Engineering Science",
+      "shortcode": "ES",
       "campus": "Offered at the OSU-Cascades Campus",
       "degreesOffered": "B.S, H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I",
@@ -162,6 +172,7 @@
     },
     {
       "name": "Environmental Engineering",
+      "shortcode": "EnvE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.A., B.S., H.B.A., H.B.S.",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
@@ -178,6 +189,7 @@
     },
     {
       "name": "Industrial Engineering",
+      "shortcode": "IE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.S., H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
@@ -194,6 +206,7 @@
     },
     {
       "name": "Manufacturing Engineering",
+      "shortcode": "ME",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.S, H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
@@ -210,6 +223,7 @@
     },
     {
       "name": "Mechanical Engineering",
+      "shortcode": "MeE",
       "campus": "Offered on the Corvallis Campus and Ecampus",
       "degreesOffered": "B.S, H.B.S",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Linear Algebra I",
@@ -226,6 +240,7 @@
     },
     {
       "name": "Nuclear Engineering",
+      "shortcode": "NE",
       "campus": "Offered at the Corvallis Campus",
       "degreesOffered": "B.S. and H.B.S.",
       "mathRequirements": "Differential Calculus, Integral Calculus, Vector Calculus I, Applied Differential Equations, Introduction to Matrix Algebra, Introduction to Series",
@@ -242,6 +257,7 @@
     },
     {
       "name": "Outdoor Products",
+      "shortcode": "OP",
       "campus": "Offered at the OSU-Cascades Campus",
       "degreesOffered": "B.S, H.B.S",
       "mathRequirements": "None",
@@ -258,6 +274,7 @@
     },
     {
       "name": "Radiation Health Physics",
+      "shortcode": "RHP",
       "campus": "Offered at the Corvallis Campus and Ecampus",
       "degreesOffered": "B.S, H.B.S",
       "mathRequirements":"Differential Calculus, Integral Calculus, Vector Calculus I",
