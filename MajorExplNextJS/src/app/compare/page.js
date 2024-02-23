@@ -1,17 +1,203 @@
+'use client'
+import { useState } from 'react'
+import majorsList from '../majors/majorsList.json'
 
-export default function Home() {
+export default function Compare() {
+  const [selectedMajorName1, setSelectedMajorName1] = useState(majorsList[0].name)
+  const [selectedMajorName2, setSelectedMajorName2] = useState(majorsList[0].name)
+  const [selectedMajorName3, setSelectedMajorName3] = useState(majorsList[0].name)
+
+  const onOptionChangeHandler1 = (event) => {
+    setSelectedMajorName1(event.target.value);
+  };
+
+  const onOptionChangeHandler2 = (event) => {
+    setSelectedMajorName2(event.target.value);
+  };
+
+  const onOptionChangeHandler3 = (event) => {
+    setSelectedMajorName3(event.target.value);
+  };
+
+  const selectedMajorInfo1 = majorsList.find(m => m.name == selectedMajorName1)
+  const selectedMajorInfo2 = majorsList.find(m => m.name == selectedMajorName2)
+  const selectedMajorInfo3 = majorsList.find(m => m.name == selectedMajorName3)
+
+
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 font-mono">
+    <main className="flex min-h-screen flex-col p-24 font-mono bg-orange/10 mb-16">
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      <div className='flex flex-col items-center p-8' >
+        <div>
+          <h1 className="mb-3 text-2xl font-semibold">Select 3 Majors to Compare:</h1>
+        </div>
+        <span className='py-4'>
+          <select name="majors" id="majorsDropdown1" onChange={onOptionChangeHandler1} className="w-1/4 items-center inline-flex gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
+          </select>
+          <select name="majors" id="majorsDropdown2" onChange={onOptionChangeHandler2} className="w-1/4 ml-48 mr-48 inline-flexgap-x-1.5 rounded-md bg-white px-3 py-2 text-lg font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
+          </select>
+          <select name="majors" id="majorsDropdown3" onChange={onOptionChangeHandler3} className="w-1/4 inline-flexgap-x-1.5 rounded-md bg-white px-3 py-2 text-lg font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
+          </select>
+        </span>
       </div>
 
-      <div>
-        <h1 className={`mt-16 text-2xl font-semibold`}>Comparison Table</h1>
-        <h2 className={`mt-6 text-2xl`}>In Construction!</h2>
+      {/* Grid with three columns */}
+      <div className="grid lg:grid-cols-3 gap-x-20">
+
+        {/* Left column */}
+        <div className="lg:col-start-1 lg:col-span-1 leading-8 text-center outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/10 divide-y divide-dashed divide-orange">
+          <div className='font-bold text-2xl h-16'>
+            {selectedMajorInfo1.name}
+          </div>
+
+          <div className='mt-4 leading-8 h-20'>
+            <div className="font-bold">
+              Campus:</div>
+            {selectedMajorInfo1.campus}
+          </div>
+
+          <div className='mt-4 leading-8 h-16'>
+            <div className="font-bold">
+              Degrees Offered:
+            </div>
+            {selectedMajorInfo1.degreesOffered}
+          </div>
+
+          <div className='mt-4 leading-8 h-32'>
+            <div className='font-bold'>Compatible Skills:</div>
+            {selectedMajorInfo1.skillMatch}
+          </div>
+
+          <div className='mt-4 leading-8 h-44'>
+            <div className='font-bold'>Math Requirements:</div>
+            {selectedMajorInfo1.mathRequirements}
+          </div>
+
+          <div className='mt-4 leading-8 h-64'>
+            <div className='font-bold'>Clubs and Organizations:</div>
+            {selectedMajorInfo1.clubs}
+          </div>
+
+          <div className='mt-4 leading-8 h-24'>
+            <div className='font-bold'>Minor Matches:</div>
+            {selectedMajorInfo1.minorMatch}
+          </div>
+
+          <div className='leading-8 mt-4 h-24'>
+            <div className='font-bold'>Undergraduate Enrollment Statistics (as of Fall 2022): </div>
+            {selectedMajorInfo1.enrollment}
+          </div>
+
+          <div className='leading-8 mt-4 h-72'>
+            <div className='font-bold'>Careers:</div>
+            {selectedMajorInfo1.careers}
+          </div>
+        </div>
+
+        {/* Middle Column */}
+        <div className="lg:col-start-2 lg:col-span-1 leading-8 text-center outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/10 divide-y divide-dashed divide-orange">
+        <div className='font-bold text-2xl h-16'>
+            {selectedMajorInfo2.name}
+          </div>
+
+          <div className='mt-4 leading-8 h-20'>
+            <div className="font-bold">
+              Campus:</div>
+            {selectedMajorInfo2.campus}
+          </div>
+
+          <div className='mt-4 leading-8 h-16'>
+            <div className="font-bold">
+              Degrees Offered:
+            </div>
+            {selectedMajorInfo2.degreesOffered}
+          </div>
+
+          <div className='mt-4 leading-8 h-32'>
+            <div className='font-bold'>Compatible Skills:</div>
+            {selectedMajorInfo2.skillMatch}
+          </div>
+
+          <div className='mt-4 leading-8 h-44'>
+            <div className='font-bold'>Math Requirements:</div>
+            {selectedMajorInfo2.mathRequirements}
+          </div>
+
+          <div className='mt-4 leading-8 h-64'>
+            <div className='font-bold'>Clubs and Organizations:</div>
+            {selectedMajorInfo2.clubs}
+          </div>
+
+          <div className='mt-4 leading-8 h-24'>
+            <div className='font-bold'>Minor Matches:</div>
+            {selectedMajorInfo2.minorMatch}
+          </div>
+
+          <div className='leading-8 mt-4 h-24'>
+            <div className='font-bold'>Undergraduate Enrollment Statistics (as of Fall 2022): </div>
+            {selectedMajorInfo2.enrollment}
+          </div>
+
+          <div className='leading-8 mt-4 h-72'>
+            <div className='font-bold'>Careers:</div>
+            {selectedMajorInfo2.careers}
+          </div>
+        </div>
+
+        {/* Right Column */}
+        <div className='lg:col-start-3 lg:col-span-1 leading-8 outline p-4 text-center outline-orange/50 bg-gradient-to-r from-orange/10 to-orange/30 divide-y divide-dashed divide-orange'>
+          <div className='font-bold text-2xl h-16'>
+            {selectedMajorInfo3.name}
+          </div>
+
+          <div className='mt-4 leading-8 h-20'>
+            <div className="font-bold">
+              Campus:</div>
+            {selectedMajorInfo3.campus}
+          </div>
+
+          <div className='mt-4 leading-8 h-16'>
+            <div className="font-bold">
+              Degrees Offered:
+            </div>
+            {selectedMajorInfo3.degreesOffered}
+          </div>
+
+          <div className='mt-4 leading-8 h-32'>
+            <div className='font-bold'>Compatible Skills:</div>
+            {selectedMajorInfo3.skillMatch}
+          </div>
+
+          <div className='mt-4 leading-8 h-44'>
+            <div className='font-bold'>Math Requirements:</div>
+            {selectedMajorInfo3.mathRequirements}
+          </div>
+
+          <div className='mt-4 leading-8 h-64'>
+            <div className='font-bold'>Clubs and Organizations:</div>
+            {selectedMajorInfo3.clubs}
+          </div>
+
+          <div className='mt-4 leading-8 h-24'>
+            <div className='font-bold'>Minor Matches:</div>
+            {selectedMajorInfo3.minorMatch}
+          </div>
+
+          <div className='leading-8 mt-4 h-24'>
+            <div className='font-bold'>Undergraduate Enrollment Statistics (as of Fall 2022): </div>
+            {selectedMajorInfo3.enrollment}
+          </div>
+
+          <div className='leading-8 mt-4 h-72'>
+            <div className='font-bold'>Careers:</div>
+            {selectedMajorInfo3.careers}
+          </div>
+        </div>
       </div>
 
-      
-    </main>
+    </main >
   )
 }
