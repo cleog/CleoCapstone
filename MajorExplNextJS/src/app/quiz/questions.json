@@ -121,7 +121,7 @@
     "question": "Do you want to collaborate with others at work?",
     "answerOptions": [
       { "answer": "Yes, I love teamwork!", "matches": ["AE", "CE", "IE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"]},
-      { "answer": "I am comfortbale collaborating with others but would like some independent work in the mix too", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"]},
+      { "answer": "I am comfortable collaborating with others but would like some independent work in the mix too", "matches": ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"]},
       { "answer": "I prefer to work alone", "matches": ["AE", "CE", "ECE", "ES", "OP"]},
       { "answer": "Not sure", "matches": []}
     ]
