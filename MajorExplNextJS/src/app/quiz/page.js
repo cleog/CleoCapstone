@@ -45,7 +45,7 @@ export default function Home() {
   const [questions, setQuestions] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/api')
+    fetch('http://localhost:3000/api/questions')
       .then(res => res.json())
       .then(data => setQuestions(data.questions))
   }, [])
@@ -57,7 +57,7 @@ export default function Home() {
       return newAnswers;
     });
   };
-  console.log(questions)
+  // console.log(questions)
 
   const handleNext = () => {
     if (currentQuestion < questions.length - 1) {
@@ -98,7 +98,24 @@ export default function Home() {
   };
 
   const handleSubmit = () => {
-    setResults(calculateResults())
+    let topMatches = calculateResults()
+    setResults(topMatches)
+
+    topMatches = topMatches.slice(0, 3)
+
+    // Now we need to send the top 3 matches to the server to increment the count for each of them
+    var shortCodesString = topMatches.map((match) => match[0]).join(',')
+
+    // Do a POST request to the server to increment the count for each of the top 3 matches
+    fetch('http://localhost:3000/api/majorcounts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ shortcodes: shortCodesString })
+    })
+      .then(res => res.json())
+      // .then(data => console.log(data))
   };
 
   return (

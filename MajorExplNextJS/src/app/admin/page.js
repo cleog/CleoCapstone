@@ -30,6 +30,24 @@ export default function Home() {
             });
     }, []);
 
+    const [majorCounts, setMajorCounts] = useState([]);
+    // Get majorcounts from database
+    useEffect(() => {
+        fetch('/api/majorcounts')
+            .then((res) => res.json())
+            .then((data) => {
+                setMajorCounts(data);
+            });
+    }, []); // TODO: Add a dependency array so we know when to call the API again when a count is updated? or just tell user to hit Refresh button
+
+    function getCountForMajorShortcode(shortcode) {
+        if (majorCounts.length === 0)
+            return '...'
+        const majorCount = majorCounts.counts.find((major) => major.shortcode === shortcode);
+        return majorCount ? majorCount.count : 0;
+    }
+
+
     return (
         <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">
             <h2 className='text-3xl mb-8 font-semibold'>Admin View</h2>
@@ -46,7 +64,7 @@ export default function Home() {
                         {majorsList.map((major) => (
                             <tr key={major.name}>
                                 <td className='text-lg px-2 py-4 border border-1 border-orange'>{major.name}</td>
-                                <td className='text-lg px-2 py-4 border border-1 border-orange'>{major.enrollment}</td>
+                                <td className='text-lg px-2 py-4 border border-1 border-orange'>{getCountForMajorShortcode(major.shortcode)}</td>
                             </tr>
                         ))}
                     </tbody>
