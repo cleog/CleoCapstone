@@ -4,7 +4,7 @@ import clientPromise from "../../../lib/mongodb";
 export const dynamic = 'force-dynamic' // defaults to auto
 
 
-// This GETS all the 'quiz resukt data' from the database - an array of {shortcode: count} pairs
+// This GETS all the 'quiz result data' from the database - an array of {shortcode: count} pairs
 export async function GET(request) {
     try {
         const client = await clientPromise;

@@ -2,8 +2,9 @@
 
 import { set } from 'lodash';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
-export default function Home() {
+export default function Home(parms) {
     const [majorsList, setMajorsList] = useState([]);
 
     useEffect(() => {
@@ -17,17 +18,20 @@ export default function Home() {
     }, []);
 
     const [questions, setQuestions] = useState([]);
-    const [matches, setMatches] = useState([]);
 
     useEffect(() => {
-        import('../quiz/questions.json')
-            .then((module) => {
-                setQuestions(module.default);
-                setMatches(module.default);
-            })
-            .catch((error) => {
-                console.error('Failed to load questions:', error);
-            });
+        fetch('http://localhost:3000/api/questions')
+        .then(res => res.json())
+        .then(data => setQuestions(data.questions))
+  
+        // import('../quiz/questions.json')
+        //     .then((module) => {
+        //         setQuestions(module.default);
+        //         setMatches(module.default);
+        //     })
+        //     .catch((error) => {
+        //         console.error('Failed to load questions:', error);
+        //     });
     }, []);
 
     const [majorCounts, setMajorCounts] = useState([]);
@@ -95,7 +99,9 @@ export default function Home() {
                                         <span key={match.matches}>- {match.matches.join(', ')}<br /></span>
                                     ))}
                                 </td>
-                                <td className='text-lg border border-1 border-orange p-2'>Edit Delete</td>
+                                <td className='text-lg border border-1 border-orange p-2'>
+                                    <Link className='hover:underline' href={`./admin/editquestion?id=${questionName._id}`}>Edit</Link> <a>Delete</a>
+                                </td>
                             </tr>
                         ))}
                     </tbody>
