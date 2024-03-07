@@ -1,11 +1,46 @@
 'use client'
 
-import { set } from 'lodash';
+// TODO: Add validation for the question object - look at a lib like zod or yup
+
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
+
 export default function Home(parms) {
     const [majorsList, setMajorsList] = useState([]);
+    const [refreshTrigger, setRefreshTrigger] = useState(0);
+
+    async function deleteQuestionHandler(id) {
+        const result = await fetch('/api/questions?id=' + id, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        setRefreshTrigger(prev => (prev + 1))
+        return result
+    }
+
+    async function addQuestionHandler() {
+        const newQuestion = {
+            question: 'What is your favorite color?',
+            group: 999,
+            answerOptions: [
+                { answer: 'Red', matches: ['AA', 'BB'] },
+                { answer: 'Blue', matches: ['CC', 'DD'] },
+            ]
+        }
+        const result = await fetch('/api/questions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newQuestion)
+        })
+        setRefreshTrigger(prev => (prev + 1))
+        return result
+    }
+
 
     useEffect(() => {
         import('../majors/majorsList.json')
@@ -15,24 +50,15 @@ export default function Home(parms) {
             .catch((error) => {
                 console.error('Failed to load majorsList:', error);
             });
-    }, []);
+    }, [refreshTrigger]);
 
     const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
         fetch('/api/questions')
-        .then(res => res.json())
-        .then(data => setQuestions(data.questions))
-  
-        // import('../quiz/questions.json')
-        //     .then((module) => {
-        //         setQuestions(module.default);
-        //         setMatches(module.default);
-        //     })
-        //     .catch((error) => {
-        //         console.error('Failed to load questions:', error);
-        //     });
-    }, []);
+            .then(res => res.json())
+            .then(data => setQuestions(data.questions))
+    }, [refreshTrigger]);
 
     const [majorCounts, setMajorCounts] = useState([]);
     // Get majorcounts from database
@@ -42,7 +68,7 @@ export default function Home(parms) {
             .then((data) => {
                 setMajorCounts(data);
             });
-    }, []); // TODO: Add a dependency array so we know when to call the API again when a count is updated? or just tell user to hit Refresh button
+    }, [refreshTrigger]); // TODO: Add a dependency array so we know when to call the API again when a count is updated? or just tell user to hit Refresh button
 
     function getCountForMajorShortcode(shortcode) {
         if (majorCounts.length === 0)
@@ -100,12 +126,15 @@ export default function Home(parms) {
                                     ))}
                                 </td>
                                 <td className='text-lg border border-1 border-orange p-2'>
-                                    <Link className='hover:underline' href={`./admin/editquestion?id=${questionName._id}`}>Edit</Link> <a>Delete</a>
+                                    <Link className='hover:underline' href={`./admin/editquestion?id=${questionName._id}`}>Edit</Link>
+                                    &nbsp;
+                                    <Link className='hover:underline' href="#" onClick={() => deleteQuestionHandler(questionName._id)}>Delete</Link>
                                 </td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
+                <button className='bg-orange/50 p-2 rounded-md hover:bg-orange/70' onClick={addQuestionHandler}>Add Question</button>
             </div>
         </main>
     )

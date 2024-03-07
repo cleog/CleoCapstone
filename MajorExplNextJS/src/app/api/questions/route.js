@@ -68,13 +68,16 @@ export async function PUT(request) {
             { _id: new ObjectId(id) },
             question
         );
-        console.log("result:", result)
+        console.log("PUT question result:", result)
         return Response.json(result)
     } catch (e) {
         console.error(e);
         return Response.json({ error: e })
     }
 }
+
+
+
 
 
 // Example of a body for a PUT request:
@@ -89,3 +92,47 @@ export async function PUT(request) {
 //       { answer: 'Not sure', matches: [] }
 //     ]
 //   }
+
+
+
+export async function POST(request) {
+    // TODO: authenticate the user
+    const client = await clientPromise;
+    const db = client.db("Quiz");
+    const questions = db.collection("Questions and answers");
+    let question = await request.json();
+
+    console.log("question:")
+    console.dir(question.answerOptions, 4)
+
+    // TODO: validate the question object using zod or yup or something like that
+    // TODO: validate there is no _id field in the question object
+
+    try {
+        const result = await questions.insertOne(question);
+        console.log("POST question result:", result)
+        return Response.json(result)
+    } catch (e) {
+        console.error(e);
+        return Response.json({ error: e })
+    }
+}
+
+export async function DELETE(request) {
+    const client = await clientPromise;
+    const db = client.db("Quiz");
+    const questions = db.collection("Questions and answers");
+    const searchParams = request.nextUrl.searchParams;
+    const id = searchParams.get('id');
+    console.log("DELETE question with id:", id)
+      
+    try {
+        const result = await questions.deleteOne({ _id: new ObjectId(id) });
+        console.log("DELETE question result:", result)
+        return Response.json(result)
+    } catch (e) {
+        console.error(e);
+        return Response.json({ error: e })
+    }
+
+}
