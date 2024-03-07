@@ -15,7 +15,7 @@ const ResultsView = ({ results }) => {
         <h3 className='py-8 text-2xl font-bold'>Your 3 Recommended Majors:</h3>
         {
           results.slice(0, 3).map((r, i) => (
-            <p>
+            <p key={i}>
               <strong className="text-xl">{r[2].name}</strong>
               <ul className='pb-8 text-lg'>
                 <li>Campus: {r[2].campus} </li>

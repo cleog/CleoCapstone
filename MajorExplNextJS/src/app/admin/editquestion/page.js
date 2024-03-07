@@ -158,7 +158,7 @@ export default function Home(parms) {
         fetch('http://localhost:3000/api/questions?id=' + id)
             .then(res => res.json())
             .then(data => setQuestion(addUuidsToAnswers(data.questions[0])))
-    }, []);
+    }, [id]);
 
     if (question === undefined)
         return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">Loading...</main>
