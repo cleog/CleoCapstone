@@ -15,7 +15,7 @@ export async function GET(request) {
     const qsp = new URL(request.url).searchParams;
     const id = qsp.get('id')
     if (id) {
-        console.log("id:", id)
+        console.log("GET question with id:", id)
         finderQuery._id = new ObjectId(id)
     }
 
@@ -28,8 +28,64 @@ export async function GET(request) {
             .sort({ group: 1 })
             .limit(100)
             .toArray();
-        return Response.json({questions })
+        return Response.json({ questions })
     } catch (e) {
         console.error(e);
     }
 }
+
+
+export async function PUT(request) {
+    // TODO: authenticate the user
+    const client = await clientPromise;
+    const db = client.db("Quiz");
+    const questions = db.collection("Questions and answers");
+    let question = await request.json();
+
+    console.log("question:")
+    console.dir(question.answerOptions, 4)
+
+    // TODO: validate the question object using zod or yup or something like that
+
+    // Handy for when we mangle the data :)
+    // question= {
+    //     _id: '65d82f034a0d5147032ed35d',
+    //     question: 'Do you want to pursue a career in the medical field?',
+    //     group: 8,
+    //     answerOptions: [
+    //       { answer: 'Yes!!', matches: ["RHP", "BE"] },
+    //       { answer: 'Not really', matches: ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"] },
+    //       { answer: 'Not sure', matches: [] }
+    //     ]
+    //   }
+
+    // Remove _id from the question object - use this as a filter instead
+    const id = question._id;
+    delete question._id;
+
+    try {
+        const result = await questions.replaceOne(
+            { _id: new ObjectId(id) },
+            question
+        );
+        console.log("result:", result)
+        return Response.json(result)
+    } catch (e) {
+        console.error(e);
+        return Response.json({ error: e })
+    }
+}
+
+
+// Example of a body for a PUT request:
+
+// question: {
+//     _id: '65d82f034a0d5147032ed35d',
+//     question: 'Do you want to pursue a career in the medical field?',
+//     group: 8,
+//     answerOptions: [
+//       { answer: 'Yes!!', matches: ["RHP", "BE"] },
+//       { answer: 'Not really', matches: ["AE", "CE", "CS", "ECE", "ES", "MeE", "NE", "OP", "RHP", "BE", "EcolE", "EnvE", "CivE", "CEM"] },
+//       { answer: 'Not sure', matches: [] }
+//     ]
+//   }
