@@ -12,11 +12,11 @@ const ResultsView = ({ results }) => {
   return (
     results.length === 0 ? <p className='py-8'>Results will show after submitting the quiz!</p> :
       <div className="flex flex-col mt-20 items-start w-full outline p-4 outline-orange/50 bg-orange/10">
-        <h3 className='py-8 text-2xl font-bold'>Your 3 Recommended Majors:</h3>
+        <h3 className='py-8 text-xl font-bold'>Your 3 Recommended Majors:</h3>
         {
           results.slice(0, 3).map((r, i) => (
             <p key={i}>
-              <strong className="text-xl">{r[2].name}</strong>
+              <strong className="text-l">{r[2].name}</strong>
               <ul className='pb-8 text-lg'>
                 <li>Campus: {r[2].campus} </li>
                 <li>Questions that matched: {r[1]}</li>
@@ -121,15 +121,15 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-24 font-mono bg-orange/10">
       <div>
-        <h1 className="mb-3 text-3xl font-bold text-center mt-10">Major Exploration Quiz</h1>
-        <h2 className="mb-3 text-xl text-center mt-10">This quiz will recommend 3 College of Engineering majors that you may be a good fit for!</h2>
-        <h3 className="mb-3 text-lg mt-10 px-40 text-center">Results will appear below after you submit the quiz. To edit quiz answers you can use the previous button then change the answer and submit again to get an updated result.</h3>
+        <h1 className="mb-3 text-xl font-bold text-center mt-10">Major Exploration Quiz</h1>
+        <h2 className="mb-3 text-med text-center mt-10">This quiz will recommend 3 College of Engineering majors that you may be a good fit for!</h2>
+        <h3 className="mb-3 text-med mt-10 px-40 text-center">Results will appear below after you submit the quiz. To edit quiz answers you can use the previous button then change the answer and submit again to get an updated result.</h3>
         <div className="flex flex-col mt-20 items-start w-full outline p-4 outline-orange/50 bg-orange/10">
-          <h4 className="mt-10 text-xl text-black">Question {currentQuestion + 1} of {questions.length}</h4>
-          <div className="mt-4 text-2xl text-black">
+          <h4 className="mt-10 text-med text-black">Question {currentQuestion + 1} of {questions.length}</h4>
+          <div className="mt-4 text-l text-black">
             {questions[currentQuestion]?.question}
           </div>
-          <div className="mt-4 text-2xl text-black">
+          <div className="mt-4 text-l text-black">
             {questions[currentQuestion]?.answerOptions.map((option, i) => (
               <div key={i}>
                 <input
@@ -147,11 +147,11 @@ export default function Home() {
             ))}
           </div>
           <span>
-            <button className="bg-orange text-white mr-4" onClick={handlePrevious}>Previous</button>
+            <button className="text-sm bg-orange text-white mr-4" onClick={handlePrevious}>Previous</button>
             {currentQuestion === questions.length - 1 ? (
-              <button className="bg-orange text-white" onClick={handleSubmit}>Submit</button>
+              <button className="text-sm bg-orange text-white" onClick={handleSubmit}>Submit</button>
             ) : (
-              <button className="bg-orange text-white" onClick={handleNext}>Next</button>
+              <button className="text-sm bg-orange text-white" onClick={handleNext}>Next</button>
             )}
           </span>
         </div>
