@@ -20,7 +20,7 @@ export default function Home(parms) {
     const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/questions')
+        fetch('/api/questions')
         .then(res => res.json())
         .then(data => setQuestions(data.questions))
   

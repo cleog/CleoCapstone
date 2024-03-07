@@ -50,7 +50,7 @@ const Navbar = () => {
       </div>
 
     <div>
-      <h1 className="text-white text-3xl items-center font-mono ">College of Engineering Majors Exploration Tool</h1>
+      <h1 className="text-white text-2xl items-center font-mono ">College of Engineering Majors Exploration Tool</h1>
     </div>
 
       <ul className="hidden md:flex font-mono">

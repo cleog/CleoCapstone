@@ -140,7 +140,7 @@ export default function Home(parms) {
         // We need to remove those field_ids before sending to the server
         const questionWithoutFieldIds = removeUuidsFromAnswers({...question}); // Pass in a copy of the question object so we don't damage the one we are using with React
         // issue a HTTP PUT to the /api/questions endpoint with the question object as the body
-        const result = await fetch('http://localhost:3000/api/questions', {
+        const result = await fetch('/api/questions', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -155,7 +155,7 @@ export default function Home(parms) {
     }
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/questions?id=' + id)
+        fetch('/api/questions?id=' + id)
             .then(res => res.json())
             .then(data => setQuestion(addUuidsToAnswers(data.questions[0])))
     }, [id]);

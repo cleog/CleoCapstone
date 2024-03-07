@@ -45,7 +45,7 @@ export default function Home() {
   const [questions, setQuestions] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/questions')
+    fetch('/api/questions')
       .then(res => res.json())
       .then(data => setQuestions(data.questions))
   }, [])
@@ -107,7 +107,7 @@ export default function Home() {
     var shortCodesString = topMatches.map((match) => match[0]).join(',')
 
     // Do a POST request to the server to increment the count for each of the top 3 matches
-    fetch('http://localhost:3000/api/majorcounts', {
+    fetch('/api/majorcounts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
