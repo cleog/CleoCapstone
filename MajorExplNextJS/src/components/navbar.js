@@ -34,9 +34,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 pl-6 text-white bg-orange fixed nav shadow">
-      <div>
-        {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
+    <div className="flex justify-between items-center w-full h-20 text-white bg-orange fixed nav shadow">
+      <div className='flex mr-5'>
         <h1 className="text-5xl font-signature ml-2">
           <a
             className="link-underline link-underline-black"
@@ -48,9 +47,8 @@ const Navbar = () => {
           </a>
         </h1>
       </div>
-
     <div>
-      <h1 className="text-white text-2xl items-center font-mono ">College of Engineering Majors Exploration Tool</h1>
+      <h1 className="flex text-white text-2xl items-center font-mono max-w-1/2">College of Engineering Majors Exploration Tool</h1>
     </div>
 
       <ul className="hidden md:flex font-mono">
