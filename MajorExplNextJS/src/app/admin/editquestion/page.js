@@ -7,6 +7,32 @@ import { v4 as uuidv4 } from 'uuid';
 //       This will require a copy of the original question object to compare against.
 
 
+
+const validMajorShortCodes = ["AE", "BE", "CE", "CivE", "CS", "CEM", "EcolE", "ECE", "ESE", "ES", "EnvE", "IE", "ME", "MeE", "NE", "OP", "RHP"]
+
+
+
+// These are helper functions to validate the user's data in the question object
+// It returns an array of error messages if there are any, or an empty array if there are no errors
+function validateQuestion(question) {
+    if (!question) return ["No question object provided"]
+    const response =[]
+    if (!question.question) response.push("Question is required")
+    if (!question.group) response.push("Group is required")
+    console.log(question.answerOptions.length)
+    if (question.answerOptions.length < 2) response.push("At least two answers are required")
+    for (const answer of question.answerOptions) {
+        if (!answer.answer) response.push("Answer is required")
+        for (const match of answer.matches) {
+            if (!validMajorShortCodes.includes(match.value)) response.push(`Invalid major short code: "${match.value}"`)
+        }
+    }
+    return response
+}
+
+
+
+
 // This is a helper function to add unique IDs to the unstable fields in the question object:
 //   It is needed to augment the answer options with unique IDs for the unstable fields
 //   It modifies the structure in-place and returns the modified object
@@ -163,7 +189,10 @@ export default function Home(parms) {
     if (question === undefined)
         return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">Loading...</main>
 
-    console.log(question)
+    // console.log(question)
+
+    const inputErrors = validateQuestion(question)
+    const hasNoErrors = inputErrors && inputErrors.length === 0
 
     return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">
         <h1 className="py-4 font-semibold text-2xl">Admin: Quiz Edit Page</h1>
@@ -217,8 +246,13 @@ export default function Home(parms) {
                     <div className="py-8">
                         <span>
                             <button onClick={addAnswerHandler} className="bg-orange" type="button">Add Answer</button>
-                            <button className="bg-orange ml-8" type="button" onClick={handleSubmitHandler}>Submit</button>
+                            <button className={"ml-8 " + (hasNoErrors ? "bg-orange" : "bg-gray")} type="button" onClick={handleSubmitHandler} enabled={inputErrors && inputErrors.length == 0}>
+                                Submit
+                            </button>
                         </span>
+                    </div>
+                    <div className="py-8">
+                        { inputErrors?.map((e, i) => <div key={i} className="text-red-500">{e}</div>) }
                     </div>
                 </li>
             </ul>
