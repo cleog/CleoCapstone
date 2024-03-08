@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-orange fixed nav shadow">
-      <div className='flex mr-5'>
+      <div className='flex mr-5 w-1/9 h-3/4 max-w-30'>
         <h1 className="text-5xl font-signature ml-2">
           <a
             className="link-underline link-underline-black"
@@ -43,12 +43,12 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={osuLogo} alt="OSU Logo" width={160} height={160} />
+            <Image src={osuLogo} alt="OSU Logo"  width={160} height={160}/>
           </a>
         </h1>
       </div>
     <div>
-      <h1 className="flex text-white text-2xl items-center font-mono max-w-1/2">College of Engineering Majors Exploration Tool</h1>
+      <h1 className="flex text-white lg:text-2xl sm:text-xs med:text-l items-center font-mono max-w-1/2">College of Engineering Majors Exploration Tool</h1>
     </div>
 
       <ul className="hidden md:flex font-mono">
