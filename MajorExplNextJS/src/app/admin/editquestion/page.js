@@ -3,10 +3,6 @@
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-// TODO: Grey out Submit button if no changes have been made. 
-//       This will require a copy of the original question object to compare against.
-
-
 
 const validMajorShortCodes = ["AE", "BE", "CE", "CivE", "CS", "CEM", "EcolE", "ECE", "ESE", "ES", "EnvE", "IE", "ME", "MeE", "NE", "OP", "RHP"]
 
@@ -16,7 +12,7 @@ const validMajorShortCodes = ["AE", "BE", "CE", "CivE", "CS", "CEM", "EcolE", "E
 // It returns an array of error messages if there are any, or an empty array if there are no errors
 function validateQuestion(question) {
     if (!question) return ["No question object provided"]
-    const response =[]
+    const response = []
     if (!question.question) response.push("Question is required")
     if (!question.group) response.push("Group is required")
     console.log(question.answerOptions.length)
@@ -29,9 +25,6 @@ function validateQuestion(question) {
     }
     return response
 }
-
-
-
 
 // This is a helper function to add unique IDs to the unstable fields in the question object:
 //   It is needed to augment the answer options with unique IDs for the unstable fields
@@ -128,7 +121,7 @@ export default function Home(parms) {
     const addAnswerHandler = () => {
         setQuestion(prev => {
             const newAnswers = [...prev.answerOptions];
-            newAnswers.push({ answer: "Answer goes here", matches: [], field_id: uuidv4()});
+            newAnswers.push({ answer: "Answer goes here", matches: [], field_id: uuidv4() });
             return { ...prev, answerOptions: newAnswers }
         })
     }
@@ -144,118 +137,122 @@ export default function Home(parms) {
     }
 
     const deleteMatchHandler = (answerIndex, matchIndex) => {
-        // Delete this match from the array
-        setQuestion(prev => {
-            const newMatches = prev.answerOptions[answerIndex].matches.filter((m, i) => i !== matchIndex);
-            const newAnswers = [...prev.answerOptions];
-            newAnswers[answerIndex] = { ...prev.answerOptions[answerIndex], matches: newMatches }
-            return { ...prev, answerOptions: newAnswers }
-        })
-    }
+            // Delete this match from the array
+            setQuestion(prev => {
+                const newMatches = prev.answerOptions[answerIndex].matches.filter((m, i) => i !== matchIndex);
+                const newAnswers = [...prev.answerOptions];
+                newAnswers[answerIndex] = { ...prev.answerOptions[answerIndex], matches: newMatches }
+                return { ...prev, answerOptions: newAnswers }
+            })
+        }
 
-    const deleteAnswerHandler = (answerIndex) => {
-        // Delete this answer from the array
-        setQuestion(prev => {
-            const newAnswers = prev.answerOptions.filter((a, i) => i !== answerIndex);
-            return { ...prev, answerOptions: newAnswers }
-        })
-    }
-    
-    const handleSubmitHandler = async (e) => {
-        e.preventDefault();
-        // We need to remove those field_ids before sending to the server
-        const questionWithoutFieldIds = removeUuidsFromAnswers({...question}); // Pass in a copy of the question object so we don't damage the one we are using with React
-        // issue a HTTP PUT to the /api/questions endpoint with the question object as the body
-        const result = await fetch('/api/questions', {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(questionWithoutFieldIds)    
-        })
-        const resultData = await result.json()
-        if (resultData.modifiedCount === 1) 
-            alert("Question saved successfully")
-        else 
-            alert("Question save failed: " + JSON.stringify(resultData))
-    }
+        const deleteAnswerHandler = (answerIndex) => {
+            // Delete this answer from the array
+            setQuestion(prev => {
+                const newAnswers = prev.answerOptions.filter((a, i) => i !== answerIndex);
+                return { ...prev, answerOptions: newAnswers }
+            })
+        }
 
-    useEffect(() => {
-        fetch('/api/questions?id=' + id)
-            .then(res => res.json())
-            .then(data => setQuestion(addUuidsToAnswers(data.questions[0])))
-    }, [id]);
+        const handleSubmitHandler = async (e) => {
+            e.preventDefault();
+            const questionWithoutFieldIds = removeUuidsFromAnswers({ ...question }); // Pass in a copy of the question object so we don't damage the one we are using with React
+            // issue a HTTP PUT to the /api/questions endpoint with the question object as the body
+            const result = await fetch('/api/questions', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(questionWithoutFieldIds)
+            })
+            const resultData = await result.json()
+            if (resultData.modifiedCount === 1) {
+                alert("Question saved successfully")
+                // Redirect to the admin page
+                window.location.href = '/admin'
+            } else
+                alert("Question save failed: " + JSON.stringify(resultData))
+        }
 
-    if (question === undefined)
-        return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">Loading...</main>
+        useEffect(() => {
+            fetch('/api/questions?id=' + id)
+                .then(res => res.json())
+                .then(data => setQuestion(addUuidsToAnswers(data.questions[0])))
+        }, [id]);
 
-    // console.log(question)
+        if (question === undefined)
+            return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">Loading...</main>
 
-    const inputErrors = validateQuestion(question)
-    const hasNoErrors = inputErrors && inputErrors.length === 0
+        const inputErrors = validateQuestion(question)
+        const hasNoErrors = inputErrors && inputErrors.length === 0
 
-    return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">
-        <h1 className="py-4 font-semibold text-2xl">Admin: Quiz Edit Page</h1>
+        return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">
+            <button className="bg-orange p-1 text-white w-30 h-15 self-start"><a href="/admin"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+            </svg>
+            </a></button>
+            <h1 className="py-2 font-semibold text-2xl">Admin: Quiz Edit Page</h1>
 
-        <form method="POST" action="/api/editquestion">
-            <ul className="py-8">
 
-                {/* Question */}
-                <span className='font-semibold text-xl'>Edit Question:</span>
-                <div className="mb-8 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 mt-4">
-                    <li className="mb-4 mt-4">
-                        {/* This is the input field for the question with current text as default value */}
-                        <textarea id="question" value={question.question} name="question" rows="4" cols="75" required onChange={questionValueHandler}/>
-                    </li>
-                </div>
-                
-                {/* Group */}
-                <span className='font-semibold text-xl'>Group Index:</span><small>(Questions are presented to user in order based on this number - does not need to be unique)</small>
-                <div className="mb-8 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 mt-4">
-                    <li className="mb-4 mt-4">
-                        {/* This is the input field for the group with current text as default value */}
-                        <input type="text" className="w-20" id="group" value={question.group} name="group" onChange={groupValueHandler}/>
-                    </li>
-                </div>
+            <form method="POST" action="/api/editquestion">
+                <ul className="py-8">
 
-                <span className='font-semibold text-xl'>Edit Answers:</span>
-                <li className="py-2 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 divide-y divide-dashed divide-black mt-4">
-                    {question.answerOptions.map((a, ai) => (
-                        <div className="py-4" key={a.field_id}>
-                            <li>
-                                {/* Answer */}
-                                <span className='font-semibold text-xl'>Answer:</span>
-                                <input type="text" className="w-60" value={String(a.answer)} onChange={(e) => answerValueHandler(ai, e.target.value)}/>
-                                <button className="bg-red-500 p-1 text-sm" type="button" onClick={() => deleteAnswerHandler(ai)}>Delete Answer</button>
-                            </li>
+                    {/* Question */}
+                    <span className='font-semibold text-xl'>Edit Question:</span>
+                    <div className="mb-8 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 mt-4">
+                        <li className="mb-4 mt-4">
+                            {/* This is the input field for the question with current text as default value */}
+                            <textarea id="question" value={question.question} name="question" rows="4" cols="75" required onChange={questionValueHandler} />
+                        </li>
+                    </div>
 
-                            {/* Matches */}
-                            <span className='font-semibold text-xl'>Matches:</span>
-                            {a.matches.map((m, mi) => <span key={m.field_id}>
-                                <input className="w-14" type="text" defaultValue={m.value} onChange={(e) => matchValueHandler(ai, mi, e.target.value)}/>
-                                <button className="bg-red-500 mr-4 p-1 text-sm" type="button" onClick={() => deleteMatchHandler(ai, mi)}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
-                                    </svg>
+                    {/* Group */}
+                    <span className='font-semibold text-xl'>Group Index:</span><small>(Questions are presented to user in order based on this number - does not need to be unique)</small>
+                    <div className="mb-8 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 mt-4">
+                        <li className="mb-4 mt-4">
+                            {/* This is the input field for the group with current text as default value */}
+                            <input type="text" className="w-20" id="group" value={question.group} name="group" onChange={groupValueHandler} />
+                        </li>
+                    </div>
 
+                    <span className='font-semibold text-xl'>Edit Answers:</span>
+                    <li className="py-2 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 divide-y divide-dashed divide-black mt-4">
+                        {question.answerOptions.map((a, ai) => (
+                            <div className="py-4" key={a.field_id}>
+                                <li>
+                                    {/* Answer */}
+                                    <span className='font-semibold text-xl'>Answer:</span>
+                                    <input type="text" className="w-60" value={String(a.answer)} onChange={(e) => answerValueHandler(ai, e.target.value)} />
+                                    <button className="bg-red-500 p-1 text-sm" type="button" onClick={() => deleteAnswerHandler(ai)}>Delete Answer</button>
+                                </li>
+
+                                {/* Matches */}
+                                <span className='font-semibold text-xl'>Matches:</span>
+                                {a.matches.map((m, mi) => <span key={m.field_id}>
+                                    <input className="w-14" type="text" defaultValue={m.value} onChange={(e) => matchValueHandler(ai, mi, e.target.value)} />
+                                    <button className="bg-red-500 mr-4 p-1 text-sm" type="button" onClick={() => deleteMatchHandler(ai, mi)}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
+                                        </svg>
+
+                                    </button>
+                                </span>)}
+                                <button onClick={() => addMatchHandler(ai)} className="bg-orange p-1 ml-4 text-m" type="button">Add</button>
+                            </div>
+                        ))}
+                        <div className="py-8">
+                            <span>
+                                <button onClick={addAnswerHandler} className="bg-orange" type="button">Add Answer</button>
+                                <button className={"ml-8 " + (hasNoErrors ? "bg-orange" : "bg-gray")} type="button" onClick={handleSubmitHandler} enabled={inputErrors && inputErrors.length == 0}>
+                                    Submit
                                 </button>
-                            </span>)}
-                            <button onClick={() => addMatchHandler(ai)} className="bg-orange p-1 ml-4 text-m" type="button">Add</button>
+                            </span>
                         </div>
-                    ))}
-                    <div className="py-8">
-                        <span>
-                            <button onClick={addAnswerHandler} className="bg-orange" type="button">Add Answer</button>
-                            <button className={"ml-8 " + (hasNoErrors ? "bg-orange" : "bg-gray")} type="button" onClick={handleSubmitHandler} enabled={inputErrors && inputErrors.length == 0}>
-                                Submit
-                            </button>
-                        </span>
-                    </div>
-                    <div className="py-8">
-                        { inputErrors?.map((e, i) => <div key={i} className="text-red-500">{e}</div>) }
-                    </div>
-                </li>
-            </ul>
-        </form>
-    </main>
-}
+                        <div className="py-8">
+                            {inputErrors?.map((e, i) => <div key={i} className="text-red-500">{e}</div>)}
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </main>
+    }

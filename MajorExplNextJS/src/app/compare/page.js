@@ -39,7 +39,7 @@ export default function Compare() {
           <select name="majors" id="majorsDropdown1" onChange={onOptionChangeHandler1} className="items-center rounded-md bg-white px-1 py-2 mb-6 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
           </select>
-          <div className='font-bold text-xl h-16'>
+          <div className='font-bold text-xl h-16 py-4'>
             {selectedMajorInfo1.name}
           </div>
 
@@ -92,7 +92,7 @@ export default function Compare() {
           <select name="majors" id="majorsDropdown2" onChange={onOptionChangeHandler2} className="mb-6 bg-white px-2 py-2 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
           </select>
-          <div className='font-bold text-xl h-16'>
+          <div className='font-bold text-xl h-16 py-4'>
             {selectedMajorInfo2.name}
           </div>
 
@@ -145,7 +145,7 @@ export default function Compare() {
           <select name="majors" id="majorsDropdown3" onChange={onOptionChangeHandler3} className="mb-6 bg-white px-2 py-2 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
           </select>
-          <div className='font-bold text-xl h-16'>
+          <div className='font-bold text-xl h-16 py-4'>
             {selectedMajorInfo3.name}
           </div>
 
