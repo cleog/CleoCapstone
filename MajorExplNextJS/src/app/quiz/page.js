@@ -119,7 +119,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col p-24 font-mono bg-orange/10">
+    <main className="flex min-h-screen flex-col p-24 font-mono bg-white">
       <div>
         <h1 className="mb-3 text-xl font-bold text-center mt-10">Major Exploration Quiz</h1>
         <h2 className="mb-3 text-med text-center mt-10">This quiz will recommend 3 College of Engineering majors that you may be a good fit for!</h2>

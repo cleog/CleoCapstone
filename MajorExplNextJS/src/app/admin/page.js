@@ -78,7 +78,7 @@ export default function Home(parms) {
 
 
         return (
-            <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">
+            <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-white">
                 <h2 className='text-3xl mb-8 font-semibold'>Admin View</h2>
                 <h3 className='text-2xl font-semibold py-8'>Major Result Frequency:</h3>
                 <div className="flex justify-center leading-8 text-gray-700 p-4">

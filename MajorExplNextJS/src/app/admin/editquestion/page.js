@@ -3,17 +3,16 @@
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-
 const validMajorShortCodes = ["AE", "BE", "CE", "CivE", "CS", "CEM", "EcolE", "ECE", "ESE", "ES", "EnvE", "IE", "ME", "MeE", "NE", "OP", "RHP"]
-
+const validMajorNames = ["Aerospace Engineering", "Biological Engineering", "Chemical Engineering", "Civil Engineering", "Computer Science", "Construction Engineering Management", "Ecological Engineering", "Electrical and Computer Engineering", "Energy Systems Engineering", "Environmental Sciences", "Environmental Engineering", "Industrial Engineering", "Mechanical Engineering", "Materials Science and Engineering", "Nuclear Engineering", "Operations Research", "Radiation Health Physics"];
 
 
 // These are helper functions to validate the user's data in the question object
 // It returns an array of error messages if there are any, or an empty array if there are no errors
 function validateQuestion(question) {
-    if (!question) return ["No question object provided"]
-    const response = []
-    if (!question.question) response.push("Question is required")
+    if (!question) return ["No question object provided"];
+    const response = [];
+    if (!question.question) response.push("Question is required");
     if (!question.group) response.push("Group is required")
     console.log(question.answerOptions.length)
     if (question.answerOptions.length < 2) response.push("At least two answers are required")
@@ -174,6 +173,11 @@ export default function Home(parms) {
                 alert("Question save failed: " + JSON.stringify(resultData))
         }
 
+        const handleSubmitErrorHandler = (e) => {
+            e.preventDefault();
+            alert("Please correct the errors before submitting the form")
+        }
+
         useEffect(() => {
             fetch('/api/questions?id=' + id)
                 .then(res => res.json())
@@ -186,7 +190,7 @@ export default function Home(parms) {
         const inputErrors = validateQuestion(question)
         const hasNoErrors = inputErrors && inputErrors.length === 0
 
-        return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-orange/10">
+        return <main className="flex min-h-screen flex-col items-center font-mono p-24 bg-white">
             <button className="bg-orange p-1 text-white w-30 h-15 self-start"><a href="/admin"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
             </svg>
@@ -199,7 +203,7 @@ export default function Home(parms) {
 
                     {/* Question */}
                     <span className='font-semibold text-xl'>Edit Question:</span>
-                    <div className="mb-8 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 mt-4">
+                    <div className="mb-8 outline p-4 outline-orange/50 bg-orange/20 mt-4">
                         <li className="mb-4 mt-4">
                             {/* This is the input field for the question with current text as default value */}
                             <textarea id="question" value={question.question} name="question" rows="4" cols="75" required onChange={questionValueHandler} />
@@ -208,7 +212,7 @@ export default function Home(parms) {
 
                     {/* Group */}
                     <span className='font-semibold text-xl'>Group Index:</span><small>(Questions are presented to user in order based on this number - does not need to be unique)</small>
-                    <div className="mb-8 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 mt-4">
+                    <div className="mb-8 outline p-4 outline-orange/50 bg-orange/20 mt-4">
                         <li className="mb-4 mt-4">
                             {/* This is the input field for the group with current text as default value */}
                             <input type="text" className="w-20" id="group" value={question.group} name="group" onChange={groupValueHandler} />
@@ -216,7 +220,7 @@ export default function Home(parms) {
                     </div>
 
                     <span className='font-semibold text-xl'>Edit Answers:</span>
-                    <li className="py-2 outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/1 divide-y divide-dashed divide-black mt-4">
+                    <li className="py-2 outline p-4 outline-orange/50 bg-orange/20 divide-y divide-dashed divide-black mt-4">
                         {question.answerOptions.map((a, ai) => (
                             <div className="py-4" key={a.field_id}>
                                 <li>
@@ -243,7 +247,7 @@ export default function Home(parms) {
                         <div className="py-8">
                             <span>
                                 <button onClick={addAnswerHandler} className="bg-orange" type="button">Add Answer</button>
-                                <button className={"ml-8 " + (hasNoErrors ? "bg-orange" : "bg-gray")} type="button" onClick={handleSubmitHandler} enabled={inputErrors && inputErrors.length == 0}>
+                                <button className="ml-8 bg-orange" onClick={hasNoErrors ? handSubmitError : handleSubmitErrorHandler} type="button" enabled={inputErrors && inputErrors.length == 0}>
                                     Submit
                                 </button>
                             </span>
@@ -254,5 +258,23 @@ export default function Home(parms) {
                     </li>
                 </ul>
             </form>
+            {/* table with the appreviation and the full name of the major */}    
+            <h1 className='text center font-bold text-lg'>Major Shortcode Guide</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th className='text-xl border border-1 border-orange bg-orange/20'>Major</th>
+                        <th className='px-4 py-4 text-xl border border-1 border-orange bg-orange/20'>Shortcode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {validMajorNames.map((major, i) => (
+                        <tr key={major}>
+                            <td className='text-lg px-2 py-4 border border-1 border-orange text'>{major}</td>
+                            <td className='text-lg px-2 py-4 border border-1 border-orange'>{validMajorShortCodes[i]}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </main>
     }
