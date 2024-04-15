@@ -25,7 +25,7 @@ export default function Compare() {
 
 
   return (
-    <main className="flex min-h-screen flex-col p-24 font-mono bg-orange/10 mb-16">
+    <main className="flex min-h-screen flex-col p-24 font-mono bg-white mb-16">
 
       <div className='flex flex-col items-center p-8' >
         <h1 className="mb-3 text-xl font-bold">Select 3 Majors to Compare:</h1>

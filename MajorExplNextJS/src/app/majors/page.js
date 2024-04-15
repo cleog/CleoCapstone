@@ -20,7 +20,7 @@ export default function Home() {
   const selectedMajorInfo = majorsList.find(m => m.name == selectedMajorName)
 
   return (
-    <main className="flex min-h-screen flex-col p-24 font-mono bg-orange/10">
+    <main className="flex min-h-screen flex-col p-24 font-mono bg-white">
 
       <div className='flex flex-col items-center p-8' >
         <div>
