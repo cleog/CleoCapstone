@@ -125,7 +125,7 @@ export default function Home(parms) {
                                         ))}
                                     </td>
                                     <td className='text-med border border-1 border-orange w-20'>
-                                        <button className="bg-orange text-sm w-17 text-white"><Link className='hover:underline' href={`./admin/editquestion?id=${questionName._id}`}>Edit</Link></button>
+                                        <button className="bg-orange text-sm w-17 text-black"><Link className='hover:underline' href={`./admin/editquestion?id=${questionName._id}`}>Edit</Link></button>
                                         <button className="bg-red-600 text-sm w-17 text-white"><Link className='hover:underline' href="#" onClick={() => deleteQuestionHandler(questionName._id)}>Delete</Link></button>
                                     </td>
                                 </tr>
@@ -133,7 +133,7 @@ export default function Home(parms) {
                         </tbody>
                     </table>
                     <div className="flex justify-center">
-                        <button className='bg-orange rounded-md hover:bg-orange/70' onClick={addQuestionHandler}>Add Question</button>
+                        <button className='bg-orange rounded-md hover:bg-orange/70 text-black' onClick={addQuestionHandler}>Add Question</button>
                     </div>
                 </div>
             </main>

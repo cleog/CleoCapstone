@@ -30,7 +30,7 @@ export default function Home() {
         <select name="majors" id="majorsDropdown" onChange={onOptionChangeHandler} className="w-1/3 inline-flex gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
           {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
         </select>
-        <button className="bg-orange text-white"><a className="text-sm text-white hover:underline" href="/compare">Start Comparison </a></button>
+        <button className="bg-orange text-black"><a className="text-sm text-black hover:underline" href="/compare">Start Comparison </a></button>
       </div>
 
       {/* Grid with two columns */}
@@ -84,9 +84,9 @@ export default function Home() {
             {selectedMajorInfo.hardestClasses}
           </div>
           <div className='mt-4 text-xs leading-8 text-gray-700 flex justify-evenly'>
-            <button className="bg-orange text-sm text-white"><a className="text-white hover:underline" href={selectedMajorInfo.samplePlan}>Sample 4-Year Schedule </a></button>
-            <button className="bg-orange text-sm text-white"><a className="text-white hover:underline" href={selectedMajorInfo.extraInfo}>Schedule of Classes</a></button>
-            <button className="bg-orange text-sm text-white"><a className="text-white hover:underline" href={"https://engineering.oregonstate.edu/tools-services/advising/transfer-student-guides"}>Transfer Guides</a></button>
+            <button className="bg-orange text-sm text-black"><a className="text-black hover:underline" href={selectedMajorInfo.samplePlan}>Sample 4-Year Schedule </a></button>
+            <button className="bg-orange text-sm text-black"><a className="text-black hover:underline" href={selectedMajorInfo.extraInfo}>Schedule of Classes</a></button>
+            <button className="bg-orange text-sm text-black"><a className="text-black hover:underline" href={"https://engineering.oregonstate.edu/tools-services/advising/transfer-student-guides"}>Transfer Guides</a></button>
           </div>
         </div>
 

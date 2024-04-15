@@ -25,8 +25,8 @@ const ResultsView = ({ results }) => {
           ))
         }
         <span>
-          <button className="bg-orange text-white mr-4"><a className="font-medium text-white hover:underline" href='/quiz'>Retake Quiz</a></button>
-          <button className="bg-orange text-white"><a className="font-medium text-white hover:underline" href='/majors'>View Majors</a></button>
+          <button className="bg-orange text-black mr-4"><a className="font-medium text-black hover:underline" href='/quiz'>Retake Quiz</a></button>
+          <button className="bg-orange text-black"><a className="font-medium text-black hover:underline" href='/majors'>View Majors</a></button>
         </span>
       </div>
   )
@@ -147,11 +147,11 @@ export default function Home() {
             ))}
           </div>
           <span>
-            <button className="text-sm bg-orange text-white mr-4" onClick={handlePrevious}>Previous</button>
+            <button className="text-sm bg-orange text-black mr-4" onClick={handlePrevious}>Previous</button>
             {currentQuestion === questions.length - 1 ? (
-              <button className="text-sm bg-orange text-white" onClick={handleSubmit}>Submit</button>
+              <button className="text-sm bg-orange text-black" onClick={handleSubmit}>Submit</button>
             ) : (
-              <button className="text-sm bg-orange text-white" onClick={handleNext}>Next</button>
+              <button className="text-sm bg-orange text-black" onClick={handleNext}>Next</button>
             )}
           </span>
         </div>
