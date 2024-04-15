@@ -247,7 +247,7 @@ export default function Home(parms) {
                         <div className="py-8">
                             <span>
                                 <button onClick={addAnswerHandler} className="bg-orange" type="button">Add Answer</button>
-                                <button className="ml-8 bg-orange" onClick={hasNoErrors ? handSubmitError : handleSubmitErrorHandler} type="button" enabled={inputErrors && inputErrors.length == 0}>
+                                <button className="ml-8 bg-orange" onClick={hasNoErrors ? handleSubmitHandler : handleSubmitErrorHandler} type="button" enabled={inputErrors && inputErrors.length == 0}>
                                     Submit
                                 </button>
                             </span>
