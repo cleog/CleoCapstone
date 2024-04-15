@@ -16,10 +16,10 @@ export default function Home() {
         </div>
 
         <div className='flex justify-center'>
-          <Image src={corvallisCampus} alt="OSU corvallis campus" width={500} height={400} />
+          <Image src={corvallisCampus} alt="OSU corvallis campus" width={505} height={405} />
           {/* source: https://oregonstate.edu (for academic use at OSU only) */}
         </div>
-        <p className="flex justify-center">Oregon State University's Corvallis Campus</p>
+        <p className="flex justify-center">Oregon State University Corvallis Campus</p>
       </div>
 
 

@@ -43,7 +43,7 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={osuLogo} alt="OSU Logo"  width={160} height={160}/>
+            <Image src={osuLogo} alt="OSU Logo"  width={165} height={165}/>
           </a>
         </h1>
       </div>

@@ -258,9 +258,7 @@ export default function Home(parms) {
                     </li>
                 </ul>
             </form>
-            {/* table with the appreviation and the full name of the major */}
-            {/* make this table collapsible */}
-    
+            {/* table with the appreviation and the full name of the major */}    
             <h1 className='text center font-bold text-lg'>Major Shortcode Guide</h1>
             <table>
                 <thead>
