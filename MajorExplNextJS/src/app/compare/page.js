@@ -14,9 +14,13 @@ export default function Compare() {
   if (shortcodes)
   {
     const majorsSelectedShortcodes = shortcodes.split(',')
-    majorsSelected = majorsSelectedShortcodes.map(shortcode => majorsList.find( m => m.shortcode === shortcode))
+    for (let majorSC of majorsSelectedShortcodes)
+    {
+      const m = majorsList.find(m => m.shortcode === majorSC)
+      if (m)
+        majorsSelected.push(m)
+    }
   }
-
   const [selectedMajorName1, setSelectedMajorName1] = useState(majorsSelected.length > 0 ? majorsSelected[0].name : majorsList[0].name)
   const [selectedMajorName2, setSelectedMajorName2] = useState(majorsSelected.length > 1 ? majorsSelected[1].name : majorsList[0].name)
   const [selectedMajorName3, setSelectedMajorName3] = useState(majorsSelected.length > 2 ? majorsSelected[2].name : majorsList[0].name)
