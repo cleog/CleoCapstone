@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import majorsList from '../../majors/majorsList.json'
 
-const validMajorShortCodes = ["AE", "BE", "CE", "CivE", "CS", "CEM", "EcolE", "ECE", "ESE", "ES", "EnvE", "IE", "ME", "MeE", "NE", "OP", "RHP"]
-const validMajorNames = ["Aerospace Engineering", "Biological Engineering", "Chemical Engineering", "Civil Engineering", "Computer Science", "Construction Engineering Management", "Ecological Engineering", "Electrical and Computer Engineering", "Energy Systems Engineering", "Environmental Sciences", "Environmental Engineering", "Industrial Engineering", "Mechanical Engineering", "Materials Science and Engineering", "Nuclear Engineering", "Operations Research", "Radiation Health Physics"];
-
+const validMajorShortCodes = majorsList.map(m => m.shortcode)
+const validMajorNames = majorsList.map(m => m.name)
 
 // These are helper functions to validate the user's data in the question object
 // It returns an array of error messages if there are any, or an empty array if there are no errors
