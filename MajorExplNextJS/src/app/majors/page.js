@@ -84,8 +84,8 @@ export default function Home() {
             {selectedMajorInfo.hardestClasses}
           </div>
           <div className='mt-4 text-xs leading-8 text-gray-700 flex justify-evenly'>
-            <button className="bg-orange text-sm text-black"><a className="text-black hover:underline" href={selectedMajorInfo.samplePlan}>Sample 4-Year Schedule </a></button>
-            <button className="bg-orange text-sm text-black"><a className="text-black hover:underline" href={selectedMajorInfo.extraInfo}>Schedule of Classes</a></button>
+            <button className="bg-orange mr-4 text-sm text-black"><a className="text-black hover:underline" href={selectedMajorInfo.samplePlan}>Sample 4-Year Schedule </a></button>
+            <button className="bg-orange mr-4 text-sm text-black"><a className="text-black hover:underline" href={selectedMajorInfo.extraInfo}>Schedule of Classes</a></button>
             <button className="bg-orange text-sm text-black"><a className="text-black hover:underline" href={"https://engineering.oregonstate.edu/tools-services/advising/transfer-student-guides"}>Transfer Guides</a></button>
           </div>
         </div>
