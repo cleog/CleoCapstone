@@ -1,7 +1,5 @@
 'use client'
 import { useState, useEffect } from 'react'
-// import questions from './questions.json'
-// TODO: Delete this from here and import from the API
 import majors from '../majors/majorsList.json'
 import { countBy } from 'lodash'
 
@@ -9,6 +7,7 @@ import { countBy } from 'lodash'
 
 // results is an array of entries of the form [shortcode, count, majorObject] where shortcode is the major's shortcode, count is the number of times it appeared in the user's matches, and majorObject is the major object from the majorsList.json file
 const ResultsView = ({ results }) => {
+  const shortcodesForCompare = (results.slice(0, 3).map(r => r[2].shortcode)).join(',')
   return (
     results.length === 0 ? <p className='py-8'>Results will show after submitting the quiz!</p> :
       <div className="flex flex-col mt-20 items-start w-full outline p-4 outline-orange/50 bg-orange/10">
@@ -26,7 +25,8 @@ const ResultsView = ({ results }) => {
         }
         <span>
           <button className="bg-orange text-black mr-4"><a className="font-medium text-black hover:underline" href='/quiz'>Retake Quiz</a></button>
-          <button className="bg-orange text-black"><a className="font-medium text-black hover:underline" href='/majors'>View Majors</a></button>
+          <button className="bg-orange text-black mr-4"><a className="font-medium text-black hover:underline" href='/majors'>View Majors</a></button>
+          <button className="bg-orange text-black"><a className="font-medium text-black hover:underline" href={`/compare?shortcodes=${shortcodesForCompare}`}>Compare Majors</a></button>
         </span>
       </div>
   )

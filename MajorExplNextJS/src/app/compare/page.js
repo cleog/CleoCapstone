@@ -1,11 +1,25 @@
 'use client'
 import { useState } from 'react'
 import majorsList from '../majors/majorsList.json'
+import { useSearchParams } from 'next/navigation'
 
 export default function Compare() {
-  const [selectedMajorName1, setSelectedMajorName1] = useState(majorsList[0].name)
-  const [selectedMajorName2, setSelectedMajorName2] = useState(majorsList[0].name)
-  const [selectedMajorName3, setSelectedMajorName3] = useState(majorsList[0].name)
+
+  // Get the QSP from the URL
+  const searchParams = useSearchParams()
+ 
+  const shortcodes = searchParams.get('shortcodes')
+  let majorsSelected = []
+
+  if (shortcodes)
+  {
+    const majorsSelectedShortcodes = shortcodes.split(',')
+    majorsSelected = majorsSelectedShortcodes.map(shortcode => majorsList.find( m => m.shortcode === shortcode))
+  }
+
+  const [selectedMajorName1, setSelectedMajorName1] = useState(majorsSelected.length > 0 ? majorsSelected[0].name : majorsList[0].name)
+  const [selectedMajorName2, setSelectedMajorName2] = useState(majorsSelected.length > 1 ? majorsSelected[1].name : majorsList[0].name)
+  const [selectedMajorName3, setSelectedMajorName3] = useState(majorsSelected.length > 2 ? majorsSelected[2].name : majorsList[0].name)
 
   const onOptionChangeHandler1 = (event) => {
     setSelectedMajorName1(event.target.value);
@@ -36,7 +50,12 @@ export default function Compare() {
 
         {/* Left column */}
         <div className="lg:col-start-1 lg:col-span-1 leading-8 text-center outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/10 divide-y divide-dashed divide-orange">
-          <select name="majors" id="majorsDropdown1" onChange={onOptionChangeHandler1} className="items-center rounded-md bg-white px-1 py-2 mb-6 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <select 
+            name="majors" 
+            id="majorsDropdown1" 
+            value={selectedMajorName1} 
+            onChange={onOptionChangeHandler1} 
+            className="items-center rounded-md bg-white px-1 py-2 mb-6 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
           </select>
           <div className='font-bold text-xl h-16 py-4'>
@@ -89,7 +108,7 @@ export default function Compare() {
 
         {/* Middle Column */}
         <div className="lg:col-start-2 lg:col-span-1 leading-8 text-center outline p-4 outline-orange/50 bg-gradient-to-r from-orange/30 to-orange/10 divide-y divide-dashed divide-orange">
-          <select name="majors" id="majorsDropdown2" onChange={onOptionChangeHandler2} className="mb-6 bg-white px-2 py-2 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <select name="majors" id="majorsDropdown2" value={selectedMajorName2} onChange={onOptionChangeHandler2} className="mb-6 bg-white px-2 py-2 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
           </select>
           <div className='font-bold text-xl h-16 py-4'>
@@ -142,7 +161,7 @@ export default function Compare() {
 
         {/* Right Column */}
         <div className='lg:col-start-3 lg:col-span-1 leading-8 outline p-4 text-center outline-orange/50 bg-gradient-to-r from-orange/10 to-orange/30 divide-y divide-dashed divide-orange'>
-          <select name="majors" id="majorsDropdown3" onChange={onOptionChangeHandler3} className="mb-6 bg-white px-2 py-2 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <select name="majors" id="majorsDropdown3" value={selectedMajorName3} onChange={onOptionChangeHandler3} className="mb-6 bg-white px-2 py-2 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             {majorsList.map(m => <option key={m.name} value={m.name}>{m.name}</option>)}
           </select>
           <div className='font-bold text-xl h-16 py-4'>
