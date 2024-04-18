@@ -29,50 +29,6 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            {/* <div className='flex justify-center pt-2'>
-                <h2>College of Engineering Majors Exploration Tool</h2>
-            </div>
-            <span classame='flex content-between'>
-                <div>
-                    <Image src={osuLogo} alt="OSU Logo" width={165} height={165} />
-                </div>
-                <div className>
-                    <h3>College of Engineering Quick Links:</h3>
-                    <ul>
-                        <li>
-                            <Link href='https://engineering.oregonstate.edu/academics'>Academics Information</Link>
-                        </li>
-                        <li>
-                            <Link href='https://engineering.oregonstate.edu/about'>About Information</Link>
-                        </li>
-                        <li>
-                            <Link href='https://engineering.oregonstate.edu/research'>Research Information</Link>
-                        </li>
-                    </ul>
-                </div>
-            </span>
-            {/* add links on right side */}
-            {/* <div className='flex justify-end mr-12'>
-                <div>
-                    <h3>College of Engineering Quick Links:</h3>
-                </div> */}
-                {/* <div>
-                    <ul>
-                        <li>
-                            <Link href='https://engineering.oregonstate.edu/academics'>Academics Information</Link>
-                        </li>
-                        <li>
-                            <Link href='https://engineering.oregonstate.edu/about'>About Information</Link>
-                        </li>
-                        <li>
-                            <Link href='https://engineering.oregonstate.edu/research'>Research Information</Link>
-                        </li>
-                    </ul>
-                </div> */}
-            {/* </div>
-            <div className='flex justify-center'>
-                <h3>Oregon State University Capstone Project by Cleo Golds</h3>
-            </div> */}
         </footer >
     );
 };
