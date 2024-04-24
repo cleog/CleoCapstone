@@ -3,7 +3,8 @@
 // CITE: Modified from code in https://dev.to/ryaddev/creating-a-responsive-navbar-using-nextjs-and-tailwind-css-48kk 
 import Link from "next/link";
 import Image from "next/image";
-import osuLogo from './osu-logo.jpg'
+// import osuLogo from './osu-logo.jpg'
+import osuLogo from './osu-logo2.png'
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -34,7 +35,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 text-black bg-orange fixed nav shadow">
+    <div className="flex justify-between items-center w-full h-25 text-black bg-orange fixed nav shadow">
       <div className='flex mr-5 w-1/9 h-3/4 max-w-30 bg-orange-300'>
         <h1 className="text-5xl font-signature ml-2">
           <a
@@ -43,12 +44,12 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={osuLogo} alt="OSU Logo"  width={165} height={165}/>
+            <Image className='place-self-start order-1' src={osuLogo} alt="OSU Logo"  width={180} height={150}/>
           </a>
         </h1>
       </div>
     <div>
-      <h1 className="flex text-black lg:text-2xl sm:text-xs med:text-l items-center font-mono max-w-1/2">College of Engineering Majors Exploration Tool</h1>
+      <h1 className="flex order-2 text-black lg:text-2xl sm:text-xs med:text-l items-center ml-4 font-mono max-w-1/2">College of Engineering Majors Exploration Tool</h1>
     </div>
 
       <ul className="hidden md:flex font-mono">
