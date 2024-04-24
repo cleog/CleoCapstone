@@ -1,15 +1,16 @@
 'use client'
 
-import osuLogo from './osu-logo.jpg'
+// import osuLogo from './osu-logo.jpg'
 import Image from "next/image";
+import osuLogo from './osu-logo2.png'
 import Link from "next/link";
 
 
 const Footer = () => {
     return (
-        <footer className="w-full h-40 text-black bg-orange/60 shadow grid grid-cols-3">
-            <div className='col-start-1 col-span-1 mt-10 ml-12'>
-                <Image src={osuLogo} alt="OSU Logo" width={165} height={165} />
+        <footer className="w-full h-45 text-black bg-orange shadow grid grid-cols-3">
+            <div className='col-start-1 col-span-1'>
+                <Image src={osuLogo} alt="OSU Logo" width={250} height={210} />
             </div>
             <div className='col-start-2 col-span-1 text-center mt-4'>
                 <h2 className='text-lg font-bold'>College of Engineering Majors Exploration Tool</h2>
